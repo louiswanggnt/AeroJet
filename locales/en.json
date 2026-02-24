@@ -1,0 +1,143 @@
+{
+  "common": {
+    "brandName": "GNT",
+    "productName": "AeroJet",
+    "contactSales": "Contact Sales",
+    "menu": {
+      "tech": "Technology",
+      "treatment": "Treatment",
+      "evolution": "Evolution",
+      "about": "About Us"
+    }
+  },
+  "hero": {
+    "badge": "2024 6th Generation Technology",
+    "title1": "Non-invasive Drug Delivery",
+    "title2": "New Era of Skin Regeneration",
+    "desc": "AeroJet uses patented aerodynamic technology to atomize active ingredients into micron-sized droplets, delivering them directly to the dermis at supersonic speeds.",
+    "highlight": "Non-invasive, Efficient, Zero Downtime",
+    "btn1": "Experience Now",
+    "btn2": "Watch Video"
+  },
+  "tech": {
+    "subtitle": "Core Technology",
+    "title": "Why Choose AeroJet?",
+    "features": {
+      "supersonic": {
+        "title": "Supersonic Delivery",
+        "desc": "405m/s extreme airflow instantly penetrates the stratum corneum barrier, delivering active ingredients to the dermis.",
+        "stat": "405 m/s"
+      },
+      "micron": {
+        "title": "Micron Atomization",
+        "desc": "Patented atomization technology converts essence into micron-sized droplets, ensuring uniform and deep absorption.",
+        "stat": "Micron Level"
+      },
+      "pulse": {
+        "title": "Patented Pulse Tech",
+        "desc": "Precisely controls injection frequency, providing a gentle pneumatic massage effect during delivery.",
+        "stat": "Patented Pulse"
+      }
+    },
+    "principles": {
+      "subtitle": "Technology & Principles",
+      "title": "Technology Principles",
+      "why": {
+        "title": "Why Need Drug Delivery Devices?",
+        "desc1": "The outermost layer of human skin, the 'stratum corneum', is a natural defense barrier that effectively blocks harmful external substances but also hinders the absorption of skincare products and active drug ingredients. Traditional application methods allow only a very small amount (usually less than 1%) of active ingredients to truly penetrate the stratum corneum and reach the dermis.",
+        "desc2": "To solve this problem, we need drug delivery devices. Through physical or chemical assistance, we temporarily break through the stratum corneum barrier to deliver macromolecular active ingredients (such as hyaluronic acid, collagen, exosomes) directly to the deep layers of the skin, significantly improving absorption and efficacy while avoiding the pain and infection risks associated with traditional syringe injections."
+      },
+      "atomization": {
+        "title": "Enhanced Transdermal Penetration via Atomization",
+        "desc1": "AeroJet uses exclusive high-pressure airflow technology to instantly atomize liquid skincare products or drugs into micron-sized droplets.",
+        "desc2": "When these extremely fine droplets are sprayed onto the skin surface at a supersonic speed of up to 405m/s, the powerful kinetic energy instantly opens the lipid channels between stratum corneum cells, forming tiny 'liquid needles'. The volume of these micron droplets is far smaller than pores and intercellular spaces, allowing them to easily penetrate the epidermis and distribute evenly in the dermis.",
+        "desc3": "Compared to traditional application, atomized delivery not only increases transdermal penetration by dozens of times but also, due to its uniform distribution, allows active ingredients to exert maximum effect in the underlying skin layers, achieving excellent results in deep hydration, tissue repair, and collagen proliferation."
+      },
+      "comparison": {
+        "title": "Comparison with Other Market Products",
+        "headers": ["AeroJet T6", "Others"],
+        "rows": {
+          "speed": { "label": "Drug Speed", "t6": "405 m/s", "other": "150~250 m/s" },
+          "brand": { "label": "Brand Value", "t6": "Multi-national Patents + National Certification\n20+ Years Patent Maintenance", "other": "None" },
+          "mode": { "label": "Emission Mode", "t6": "Pulse (Efficient, Massage)\nContinuous (Quiet, Comfortable)", "other": "Continuous" },
+          "safety": { "label": "Safety", "t6": "Verified by Multiple Studies", "other": "Unconfirmed" },
+          "system": { "label": "System", "t6": "Training Courses\nProject Guidance for Startups", "other": "Training" },
+          "marketing": { "label": "Marketing Channels", "t6": "Government Cooperation\nChina-Japan-Taiwan Enterprise Cooperation", "other": "Online Marketing" },
+          "effect": { "label": "Actual Effect", "t6": "Academia Sinica Paper Cooperation\nThousands of Proven Cases", "other": "Few Cases\nEffect Unclear" }
+        }
+      },
+      "publications": {
+        "title": "Published Journals"
+      },
+      "patents": {
+        "title": "Patents List"
+      }
+    }
+  },
+  "evolution": {
+    "subtitle": "Evolution",
+    "title": "AeroJet Evolution",
+    "desc": "From the first generation of floor-standing equipment in 2005 to the sixth generation of handheld AeroJet T6 in 2025, we continue to break through technical bottlenecks to achieve more precise and lighter non-invasive delivery.",
+    "tableTitle": "Generation Specifications Comparison",
+    "specs": "Specifications",
+    "type": "Type",
+    "weight": "Weight",
+    "speed": "Delivery Speed",
+    "load": "Drug Loading",
+    "atomizer": "Atomizer",
+    "design": "Gun Head Design",
+    "output": "Single Output",
+    "gun": "Gun System",
+    "gen": "Generation",
+    "control": "Control System"
+  },
+  "treatment": {
+    "subtitle": "Clinical Cases",
+    "title": "Clinical Cases",
+    "desc": "Witness the real changes with AeroJet",
+    "before": "Before",
+    "after": "After"
+  },
+  "about": {
+    "subtitle": "About GNT",
+    "title": "About GNT",
+    "desc": "GNT is dedicated to the research and development of nanotechnology and biomedical materials, leading the new era of non-invasive medical aesthetics and drug delivery with breakthrough patented technologies. We believe that technological progress should bring safer, more effective, and painless treatment experiences.",
+    "products": {
+      "p1": { "title": "Aesthetic Drug Delivery Device", "desc": "Combining fluid dynamics and precision engineering to provide non-invasive, painless, and efficient active ingredient delivery solutions." },
+      "p2": { "title": "Nano Metal Craft", "desc": "Specializing in precious metal materials like nano-gold, applied to biomedical sensing and drug carriers to improve biocompatibility." },
+      "p3": { "title": "Gold Leaf Wine", "desc": "Infusing high-purity edible gold leaf into top-quality liquor, showcasing ultimate luxury and unique flavor." },
+      "p4": { "title": "Gold Traditional Chinese Medicine", "desc": "Combining traditional Chinese medicine pharmacology with modern nano-gold technology to enhance the activity and absorption rate of medicinal materials." },
+      "p5": { "title": "Skincare Development", "desc": "Developing exclusive active ingredient formulas, including high-concentration hyaluronic acid and exosomes, to maximize skincare effects." },
+      "p6": { "title": "Medical Devices", "desc": "Independently developing high-end medical equipment, obtaining multi-national patents and certifications to ensure clinical safety." }
+    }
+  },
+  "faq": {
+    "subtitle": "FAQ",
+    "title": "Answering Your Doubts",
+    "questions": [
+      {
+        "q": "Is the AeroJet treatment painful?",
+        "a": "Completely painless and non-invasive. AeroJet uses pneumatic and micron-level atomization technology to instantly penetrate the stratum corneum at 405m/s. Patients will only feel a gentle airflow and micro-shockwave massage."
+      },
+      {
+        "q": "How long is the recovery period after treatment?",
+        "a": "Zero recovery period. No open wounds are created, and normal daily routine and makeup can be resumed immediately after treatment."
+      },
+      {
+        "q": "What is the recommended treatment frequency?",
+        "a": "Depends on skin condition. Generally recommended once every 2-4 weeks initially, and once every 2-3 months for maintenance after 3-5 consecutive treatments."
+      },
+      {
+        "q": "What active ingredients can AeroJet be combined with?",
+        "a": "Extremely extensive. Including high-concentration hyaluronic acid, various growth factors, exosomes, Vitamin C, etc. Since it is physical delivery, it does not destroy ingredient activity."
+      }
+    ]
+  },
+  "footer": {
+    "contact": "Contact Us",
+    "address": "No. xxx, Ruiguang Rd., Neihu Dist., Taipei City",
+    "phone": "02-1234-5678",
+    "email": "info@gnt.com.tw",
+    "copyright": "© 2024 GNT Industry Co., Ltd. All rights reserved."
+  }
+}
