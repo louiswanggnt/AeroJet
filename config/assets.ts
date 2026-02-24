@@ -1,9 +1,9 @@
 export const ASSETS = {
   logo: '/images/logo.png',
   hero: {
-    slide1: 'https://picsum.photos/seed/aerojet1/1920/1080',
-    slide2: 'https://picsum.photos/seed/aerojet2/1920/1080',
-    slide3: 'https://picsum.photos/seed/aerojet3/1920/1080',
+    slide1: '\hero\venturi_tube01.png',
+    slide2: '\hero\t6.png',
+    slide3: '\hero\bed.png',
   },
   tech: {
     drugDelivery: 'https://picsum.photos/seed/tech1/1200/600',
@@ -32,8 +32,8 @@ export const ASSETS = {
   },
   treatment: {
     case1: {
-      before: 'https://picsum.photos/seed/case1-before/400/300',
-      after: 'https://picsum.photos/seed/case1-after/400/300',
+      before: '\images\treatment\penetration_natural.png',
+      after: '\images\treatment\penetration_t5_new.png',
     },
     case2: {
       before: 'https://picsum.photos/seed/case2-before/400/300',
