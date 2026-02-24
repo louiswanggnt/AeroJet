@@ -11,22 +11,22 @@ export const ASSETS = {
   },
   evolution: {
     t3: {
-      control: 'https://picsum.photos/seed/t3-control/400/300',
+      control: '\images\evolution\control_t3.png',
       carousel: 'https://picsum.photos/seed/t3-control/1200/600',
     },
     t4: {
-      gun: 'https://picsum.photos/seed/t4-gun/400/300',
-      control: 'https://picsum.photos/seed/t4-control/400/300',
+      gun: '\images\evolution\gun_t4.png',
+      control: '\images\evolution\control_t4.png',
       carousel: 'https://picsum.photos/seed/t4-control/1200/600',
     },
     t5: {
-      gun: 'https://picsum.photos/seed/t5-gun/400/300',
-      control: 'https://picsum.photos/seed/t5-control/400/300',
+      gun: '\images\evolution\gun_t5.png',
+      control: '\images\evolution\control_t5.png',
       carousel: 'https://picsum.photos/seed/t5-control/1200/600',
     },
     t6: {
-      gun: 'https://picsum.photos/seed/t6-gun/400/300',
-      control: 'https://picsum.photos/seed/t6-control/400/300',
+      gun: '\images\evolution\gun_t6.png',
+      control: '\images\evolution\control_t6.png',
       carousel: 'https://picsum.photos/seed/t6-control/1200/600',
     },
   },
@@ -65,10 +65,10 @@ export const ASSETS = {
     products: {
       product1: 'https://picsum.photos/seed/product1/800/600',
       product2: 'https://picsum.photos/seed/product2/800/600',
-      product3: 'https://picsum.photos/seed/product3/800/600',
+      product3: '\images\about\wine.png',
       product4: 'https://picsum.photos/seed/product4/800/600',
-      product5: 'https://picsum.photos/seed/product5/800/600',
-      product6: 'https://picsum.photos/seed/product6/800/600',
+      product5: '\images\about\skincare.png',
+      product6: '\images\about\bed.png',
     },
   },
 };
