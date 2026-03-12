@@ -1,9 +1,9 @@
 export const ASSETS = {
   logo: '/images/logo.png',
   hero: {
-    slide1: '\hero\venturi_tube01.png',
-    slide2: '\hero\t6.png',
-    slide3: '\hero\bed.png',
+    skin: '/images/hero/skin.png',
+    smile: '/images/hero/smile.png',
+    hair: '/images/hero/hair.png',
   },
   tech: {
     drugDelivery: 'https://picsum.photos/seed/tech1/1200/600',
@@ -11,64 +11,64 @@ export const ASSETS = {
   },
   evolution: {
     t3: {
-      control: '\images\evolution\control_t3.png',
-      carousel: 'https://picsum.photos/seed/t3-control/1200/600',
+      control: '/images/evolution/control_t3.png',
+      carousel: '/images/evolution/control_t3.png',
     },
     t4: {
-      gun: '\images\evolution\gun_t4.png',
-      control: '\images\evolution\control_t4.png',
-      carousel: 'https://picsum.photos/seed/t4-control/1200/600',
+      gun: '/images/evolution/gun_t4.png',
+      control: '/images/evolution/control_t4.png',
+      carousel: '/images/evolution/t4.png',
     },
     t5: {
-      gun: '\images\evolution\gun_t5.png',
-      control: '\images\evolution\control_t5.png',
-      carousel: 'https://picsum.photos/seed/t5-control/1200/600',
+      gun: '/images/evolution/gun_t5.png',
+      control: '/images/evolution/control_t5.png',
+      carousel: '/images/evolution/t5.png',
     },
     t6: {
-      gun: '\images\evolution\gun_t6.png',
-      control: '\images\evolution\control_t6.png',
-      carousel: 'https://picsum.photos/seed/t6-control/1200/600',
+      gun: '/images/evolution/gun_t6.png',
+      control: '/images/evolution/control_t6.png',
+      carousel: '/images/evolution/t6.png',
     },
   },
   treatment: {
     case1: {
-      before: '\images\treatment\penetration_natural.png',
-      after: '\images\treatment\penetration_t5_new.png',
+      before: '/images/treatment/1b.jpg',
+      after: '/images/treatment/1a.jpg',
     },
     case2: {
-      before: 'https://picsum.photos/seed/case2-before/400/300',
-      after: 'https://picsum.photos/seed/case2-after/400/300',
+      before: '/images/treatment/2b.jpg',
+      after: '/images/treatment/2a.jpg',
     },
     case3: {
-      before: 'https://picsum.photos/seed/case3-before/400/300',
-      after: 'https://picsum.photos/seed/case3-after/400/300',
+      before: '/images/treatment/3b.jpg',
+      after: '/images/treatment/3a.jpg',
     },
     case4: {
-      before: 'https://picsum.photos/seed/case4-before/400/300',
-      after: 'https://picsum.photos/seed/case4-after/400/300',
+      before: '/images/treatment/4b.jpg',
+      after: '/images/treatment/4a.jpg',
     },
     case5: {
-      before: 'https://picsum.photos/seed/case5-before/400/300',
-      after: 'https://picsum.photos/seed/case5-after/400/300',
+      before: '/images/treatment/5b.jpg',
+      after: '/images/treatment/5a.jpg',
     },
     case6: {
-      before: 'https://picsum.photos/seed/case6-before/400/300',
-      after: 'https://picsum.photos/seed/case6-after/400/300',
+      before: '/images/treatment/6b.jpg',
+      after: '/images/treatment/6a.jpg',
     },
     case7: {
-      before: 'https://picsum.photos/seed/case7-before/400/300',
-      after: 'https://picsum.photos/seed/case7-after/400/300',
+      before: '/images/treatment/7b.jpg',
+      after: '/images/treatment/7a.jpg',
     },
   },
   about: {
     companyBackground: 'https://picsum.photos/seed/company/1920/1080',
     products: {
-      product1: 'https://picsum.photos/seed/product1/800/600',
-      product2: 'https://picsum.photos/seed/product2/800/600',
-      product3: '\images\about\wine.png',
-      product4: 'https://picsum.photos/seed/product4/800/600',
-      product5: '\images\about\skincare.png',
-      product6: '\images\about\bed.png',
+      t6: '/images/about/t6.png',
+      nanogold: '/images/about/nanogold.png',
+      wine: '/images/about/wine.png',
+      gold: '/images/about/gold.png',
+      skincare: '/images/about/skincare.png',
+      bed: '/images/about/bed.png',
     },
   },
 };

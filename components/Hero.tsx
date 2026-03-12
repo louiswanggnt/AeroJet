@@ -5,10 +5,21 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, PlayCircle } from 'lucide-react';
 import Image from 'next/image';
 
-const images = [
-  'https://picsum.photos/seed/aerojet1/1920/1080',
-  'https://picsum.photos/seed/aerojet2/1920/1080',
-  'https://picsum.photos/seed/aerojet3/1920/1080',
+import { ASSETS } from '@/config/assets';
+
+const slides = [
+  {
+    image: ASSETS.hero.skin,
+    text: '老化/皮膚彈性',
+  },
+  {
+    image: ASSETS.hero.smile,
+    text: '痘痘/問題皮膚方案',
+  },
+  {
+    image: ASSETS.hero.hair,
+    text: '生髮/有效導入',
+  },
 ];
 
 export default function Hero() {
@@ -16,7 +27,7 @@ export default function Hero() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
+      setCurrentIndex((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
@@ -35,22 +46,36 @@ export default function Hero() {
             className="absolute inset-0"
           >
             <Image
-              src={images[currentIndex]}
+              src={slides[currentIndex].image}
               alt={`AeroJet Slide ${currentIndex + 1}`}
               fill
               className="object-cover object-center"
               priority
               referrerPolicy="no-referrer"
             />
+            
+            {/* Slide Text Overlay (Right Side) */}
+            <div className="absolute inset-0 z-20 hidden md:flex items-center justify-end pr-[10%]">
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="bg-white/10 backdrop-blur-md px-12 py-8 rounded-lg border border-white/30 shadow-2xl"
+              >
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                  {slides[currentIndex].text}
+                </h2>
+              </motion.div>
+            </div>
           </motion.div>
         </AnimatePresence>
         
-        {/* Gradient Mask */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/40 md:to-transparent z-10" />
+        {/* Gradient Mask (Left Side focus) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-white/10 md:to-transparent z-10" />
         
         {/* Carousel Indicators */}
-        <div className="absolute bottom-10 right-10 z-20 flex space-x-3">
-          {images.map((_, idx) => (
+        <div className="absolute bottom-10 right-10 z-30 flex space-x-3">
+          {slides.map((_, idx) => (
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
@@ -70,18 +95,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="max-w-2xl text-left"
         >
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm text-blue-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-8 border border-blue-100 shadow-sm"
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-            </span>
-            <span>2024 全新第六代技術</span>
-          </motion.div>
+
           
           <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-8 tracking-tight leading-tight">
             AeroJet<br />

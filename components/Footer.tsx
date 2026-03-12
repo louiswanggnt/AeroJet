@@ -10,11 +10,11 @@ export default function Footer() {
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white tracking-tight leading-tight">
-          準備好引進第六代<br className="hidden md:block" />
-          <span className="text-blue-400">無創給藥技術</span>了嗎？
+          準備好引進AeroJet.T6<br className="hidden md:block" />
+          <span className="text-blue-400">極致無創給藥技術</span>
         </h2>
         <p className="text-gray-400 mb-12 max-w-2xl mx-auto text-lg md:text-xl font-light leading-relaxed">
-          提升您的診所競爭力，為病患提供無痛、高效、零恢復期的革命性療程體驗。
+          提升您的競爭力，為病患提供無痛、高效、零恢復期的革命性療程體驗。
         </p>
         
         <button className="bg-blue-600 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-blue-500 transition-all shadow-lg hover:shadow-blue-500/25 flex items-center justify-center mx-auto group mb-24">

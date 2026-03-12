@@ -93,7 +93,7 @@ export default function Technology() {
               <div className="w-12 h-12 bg-blue-50/80 backdrop-blur rounded-xl flex items-center justify-center text-blue-600 mr-4 shadow-sm border border-white/50">
                 <Zap className="w-6 h-6" />
               </div>
-              <h4 className="text-2xl font-bold text-gray-900">為何需要藥物導入裝置？</h4>
+              <h4 className="text-2xl font-bold text-gray-900">皮膚為何需要導入裝置？</h4>
             </div>
             <div className="space-y-6 text-gray-800 leading-relaxed text-lg font-medium">
               <p>
@@ -137,7 +137,7 @@ export default function Technology() {
                 當這些極細微的液滴以高達 405m/s 的超音速噴射至皮膚表面時，強大的動能會瞬間撐開角質層細胞間的脂質通道，形成微小的「液態針」。這些微米液滴的體積遠小於毛孔與細胞間隙，因此能輕易穿透表皮，均勻散佈於真皮層中。
               </p>
               <p>
-                相較於傳統塗抹，霧化導入不僅將<strong>經皮滲透率提升數十倍</strong>，更因為其均勻分佈的特性，能讓活性成分在肌膚底層發揮最大效用，達到深層保濕、組織修復與膠原蛋白增生的卓越效果。
+                相較於傳統塗抹，霧化導入不僅將<strong>經皮滲透率提升數十倍</strong>，更因為其均勻分佈的特性，能讓活性成分在肌膚底層發揮最大效用，達到深層的藥物投遞、保養效果。
               </p>
             </div>
           </div>
@@ -165,39 +165,44 @@ export default function Technology() {
               </thead>
               <tbody className="text-center font-medium">
                 <tr>
+                  <td className="bg-slate-700 text-white p-4 border-b border-r border-slate-600 font-bold">氣體源</td>
+                  <td className="bg-blue-100 text-gray-900 p-4 border-b border-r border-slate-300 font-bold">多種氣體源<br/>二氧化碳、氮氣、氧氣<br/>高壓鋼瓶、空壓機</td>
+                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">空壓機</td>
+                </tr>
+                <tr>
                   <td className="bg-slate-700 text-white p-4 border-b border-r border-slate-600 font-bold">藥物速度</td>
                   <td className="bg-blue-100 text-gray-900 p-4 border-b border-r border-slate-300 font-bold">405 m/s</td>
                   <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">150~250 m/s</td>
                 </tr>
                 <tr>
                   <td className="bg-slate-700 text-white p-4 border-b border-r border-slate-600 font-bold">品牌價值</td>
-                  <td className="bg-blue-200 text-gray-900 p-4 border-b border-r border-slate-300">多國專利+國家認證<br/>20年以上專利維護</td>
-                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">無</td>
+                  <td className="bg-blue-200 text-gray-900 p-4 border-b border-r border-slate-300">多國專利+國家認證<br/>20年以上專利升級</td>
+                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">不詳</td>
                 </tr>
                 <tr>
                   <td className="bg-slate-700 text-white p-4 border-b border-r border-slate-600 font-bold">發射模式</td>
-                  <td className="bg-blue-100 text-gray-900 p-4 border-b border-r border-slate-300">脈衝式 (高效、按摩)<br/>連續式 (寧靜、舒適)</td>
-                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">連續式</td>
+                  <td className="bg-blue-100 text-gray-900 p-4 border-b border-r border-slate-300">毫秒脈衝式 (滲透、震波)</td>
+                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">連續噴灑</td>
                 </tr>
                 <tr>
                   <td className="bg-slate-700 text-white p-4 border-b border-r border-slate-600 font-bold">安全性</td>
                   <td className="bg-blue-200 text-gray-900 p-4 border-b border-r border-slate-300">多項研究驗證</td>
-                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">未確認</td>
+                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">不詳</td>
                 </tr>
                 <tr>
                   <td className="bg-slate-700 text-white p-4 border-b border-r border-slate-600 font-bold">體系</td>
-                  <td className="bg-blue-100 text-gray-900 p-4 border-b border-r border-slate-300">培訓課程<br/>專案輔導創業</td>
-                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">培訓</td>
+                  <td className="bg-blue-100 text-gray-900 p-4 border-b border-r border-slate-300">專業培訓課程<br/>創業輔導</td>
+                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">操作教學</td>
                 </tr>
                 <tr>
                   <td className="bg-slate-700 text-white p-4 border-b border-r border-slate-600 font-bold">行銷通路</td>
-                  <td className="bg-blue-200 text-gray-900 p-4 border-b border-r border-slate-300">政府合作<br/>中日台企業聯手合作</td>
-                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">網路行銷</td>
+                  <td className="bg-blue-200 text-gray-900 p-4 border-b border-r border-slate-300">國家型科學研究專案</td>
+                  <td className="bg-slate-200 text-gray-700 p-4 border-b border-slate-300">不詳</td>
                 </tr>
                 <tr>
                   <td className="bg-slate-700 text-white p-4 border-r border-slate-600 font-bold">實際效果</td>
-                  <td className="bg-blue-100 text-gray-900 p-4 border-r border-slate-300">中研院論文合作<br/>千例實證</td>
-                  <td className="bg-slate-200 text-gray-700 p-4">少數案例<br/>實效不明</td>
+                  <td className="bg-blue-100 text-gray-900 p-4 border-r border-slate-300">超過20年實證</td>
+                  <td className="bg-slate-200 text-gray-700 p-4">不詳</td>
                 </tr>
               </tbody>
             </table>

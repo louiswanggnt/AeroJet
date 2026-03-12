@@ -5,6 +5,9 @@ import { Menu, X, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import Link from 'next/link';
 
+import { ASSETS } from '@/config/assets';
+import Image from 'next/image';
+
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,13 +27,23 @@ export default function Header() {
       }`}
     >
       <nav className="container mx-auto px-6 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold tracking-tight flex items-center">
-          <div className="w-10 h-10 bg-slate-200 rounded-md flex items-center justify-center text-slate-500 font-bold text-[10px] border border-slate-300 shadow-sm mr-3">
-            LOGO
+        <Link href="/" className="flex items-center group">
+          <div className="relative w-10 h-10 mr-3 overflow-hidden rounded-md">
+            <Image
+              src={ASSETS.logo}
+              alt="GNT Logo"
+              fill
+              className="object-contain"
+            />
           </div>
-          <span className="text-blue-600">京華堂</span>
-          <span className="text-gray-300 font-light mx-3">|</span>
-          <span className="text-blue-600">AeroJet</span>
+          <div className="flex flex-col items-end">
+            <div className="flex items-center text-2xl font-bold tracking-tight">
+              <span className="text-blue-600">京華堂</span>
+              <span className="text-gray-300 font-light mx-3">|</span>
+              <span className="text-blue-600">AeroJet</span>
+            </div>
+            <span className="text-[10px] text-black-300 font-bold tracking-widest leading-none -mt-1">肌因槍</span>
+          </div>
         </Link>
         
         {/* Desktop Nav */}

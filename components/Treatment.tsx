@@ -2,63 +2,85 @@
 
 import { motion } from 'motion/react';
 import Image from 'next/image';
+import { ASSETS } from '@/config/assets';
 
 const cases = [
   {
     id: 1,
-    problem: '嚴重頸紋與皮膚鬆弛',
+    problem: '靜態紋',
     age: '45歲',
-    sessions: '3次',
-    beforeImg: 'https://picsum.photos/seed/before1/600/400',
-    afterImg: 'https://picsum.photos/seed/after1/600/400',
+    sessions: '5次',
+    duration: '50min',
+    startTime: '2023/10/01',
+    endTime: '2023/12/15',
+    beforeImg: ASSETS.treatment.case1.before,
+    afterImg: ASSETS.treatment.case1.after,
   },
   {
     id: 2,
-    problem: '深層痘疤與毛孔粗大',
+    problem: '暗瘡(痘痘)',
     age: '28歲',
-    sessions: '5次',
-    beforeImg: 'https://picsum.photos/seed/before2/600/400',
-    afterImg: 'https://picsum.photos/seed/after2/600/400',
+    sessions: '3次',
+    duration: '50min',
+    startTime: '2023/08/12',
+    endTime: '2023/10/20',
+    beforeImg: ASSETS.treatment.case2.before,
+    afterImg: ASSETS.treatment.case2.after,
   },
   {
     id: 3,
-    problem: '眼周細紋與暗沉',
+    problem: '代謝斑(曬斑)',
     age: '35歲',
-    sessions: '2次',
-    beforeImg: 'https://picsum.photos/seed/before3/600/400',
-    afterImg: 'https://picsum.photos/seed/after3/600/400',
+    sessions: '5次',
+    duration: '50min',
+    startTime: '2023/09/05',
+    endTime: '2023/11/10',
+    beforeImg: ASSETS.treatment.case3.before,
+    afterImg: ASSETS.treatment.case3.after,
   },
   {
     id: 4,
     problem: '臉頰凹陷與膠原蛋白流失',
     age: '52歲',
     sessions: '4次',
-    beforeImg: 'https://picsum.photos/seed/before4/600/400',
-    afterImg: 'https://picsum.photos/seed/after4/600/400',
+    duration: '45min',
+    startTime: '2023/07/20',
+    endTime: '2023/10/05',
+    beforeImg: ASSETS.treatment.case4.before,
+    afterImg: ASSETS.treatment.case4.after,
   },
   {
     id: 5,
-    problem: '產後妊娠紋',
+    problem: '脂肪瘤',
     age: '32歲',
     sessions: '6次',
-    beforeImg: 'https://picsum.photos/seed/before5/600/400',
-    afterImg: 'https://picsum.photos/seed/after5/600/400',
+    duration: '60min',
+    startTime: '2023/06/15',
+    endTime: '2023/11/30',
+    beforeImg: ASSETS.treatment.case5.before,
+    afterImg: ASSETS.treatment.case5.after,
   },
   {
     id: 6,
     problem: '頭皮毛囊萎縮與落髮',
     age: '40歲',
     sessions: '8次',
-    beforeImg: 'https://picsum.photos/seed/before6/600/400',
-    afterImg: 'https://picsum.photos/seed/after6/600/400',
+    duration: '40min',
+    startTime: '2023/05/10',
+    endTime: '2024/01/15',
+    beforeImg: ASSETS.treatment.case6.before,
+    afterImg: ASSETS.treatment.case6.after,
   },
   {
     id: 7,
-    problem: '手背肌膚老化與斑點',
+    problem: '眼袋',
     age: '60歲',
     sessions: '3次',
-    beforeImg: 'https://picsum.photos/seed/before7/600/400',
-    afterImg: 'https://picsum.photos/seed/after7/600/400',
+    duration: '45min',
+    startTime: '2023/11/01',
+    endTime: '2024/02/10',
+    beforeImg: ASSETS.treatment.case7.before,
+    afterImg: ASSETS.treatment.case7.after,
   }
 ];
 
@@ -73,7 +95,7 @@ export default function Treatment() {
             viewport={{ once: true }}
             className="text-sm font-bold text-blue-600 tracking-widest uppercase mb-3"
           >
-            Clinical Cases
+             
           </motion.h2>
           <motion.h3 
             initial={{ opacity: 0, y: 10 }}
@@ -82,7 +104,7 @@ export default function Treatment() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl font-bold text-gray-900"
           >
-            臨床實例與成果
+            案例
           </motion.h3>
         </div>
 
@@ -106,8 +128,8 @@ export default function Treatment() {
                     className="object-cover"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded">
-                    Before
+                  <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded">
+                    {item.startTime}
                   </div>
                 </div>
                 <div className="relative w-full sm:w-1/2 aspect-[4/3] sm:aspect-auto sm:h-64 md:h-auto">
@@ -118,8 +140,8 @@ export default function Treatment() {
                     className="object-cover"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute top-3 left-3 bg-blue-600/90 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded">
-                    After
+                  <div className="absolute top-3 left-3 bg-blue-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded">
+                    {item.endTime}
                   </div>
                 </div>
               </div>
@@ -135,9 +157,13 @@ export default function Treatment() {
                     <span className="text-gray-500 text-sm">患者年齡</span>
                     <span className="font-semibold text-gray-800">{item.age}</span>
                   </div>
+                  <div className="flex justify-between items-center pb-3 border-b border-gray-100">
+                    <span className="text-red-500 text-sm font-bold">課程 次數</span>
+                    <span className="font-semibold text-red-500">{item.sessions}</span>
+                  </div>
                   <div className="flex justify-between items-center pt-1">
-                    <span className="text-gray-500 text-sm">治療次數</span>
-                    <span className="font-semibold text-gray-800">{item.sessions}</span>
+                    <span className="text-red-500 text-sm font-bold">每次時間</span>
+                    <span className="font-semibold text-red-500">{item.duration}</span>
                   </div>
                 </div>
               </div>

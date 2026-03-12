@@ -15,9 +15,9 @@ const features = [
     stat: "Micron Level"
   },
   {
-    title: "專利脈衝技術",
-    desc: "精準控制噴射頻率，在導入的同時提供溫和的氣動按摩效果。",
-    stat: "Patented Pulse"
+    title: "毫秒脈衝技術",
+    desc: "精準控制噴射頻率，在導入的同時提供溫和的毫秒鎮波氣動按摩效果。",
+    stat: "0.0006mL / Pulse"
   }
 ];
 

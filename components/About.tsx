@@ -2,37 +2,23 @@
 
 import { motion } from 'motion/react';
 import Image from 'next/image';
+import { ASSETS } from '@/config/assets';
 
 const products = [
   {
-    title: '美容藥物導入儀',
+    title: '藥物/美容液導入儀',
     desc: '結合流體力學與精密工程，提供無創、無痛的高效活性成分導入解決方案。',
-    img: 'https://picsum.photos/seed/product1/800/600'
+    img: ASSETS.about.products.t6
   },
   {
-    title: '奈米金屬(奈米金、奈米銀)工藝',
-    desc: '專研奈米金等貴金屬材料，應用於生醫感測與藥物載體，提升生物相容性。',
-    img: 'https://picsum.photos/seed/product2/800/600'
+    title: '汽化金、汽化銀工藝',
+    desc: '專研汽化金屬材料，應用於食品、生技與藥物發展。',
+    img: ASSETS.about.products.nanogold
   },
   {
-    title: '金箔酒',
-    desc: '將高純度食用級金箔融入頂級酒液，展現極致奢華與獨特風味。',
-    img: 'https://picsum.photos/seed/product3/800/600'
-  },
-  {
-    title: '黃金中藥材',
-    desc: '結合傳統中醫藥理與現代奈米金科技，提升藥材活性與吸收率。',
-    img: 'https://picsum.photos/seed/product4/800/600'
-  },
-  {
-    title: '保養品開發',
-    desc: '開發專屬活性成分配方，包含高濃度玻尿酸與外泌體，將保養效果推向極致。',
-    img: 'https://picsum.photos/seed/product5/800/600'
-  },
-  {
-    title: '醫材(氣動床、導入儀)',
-    desc: '自主研發高階醫療設備，取得多國專利與認證，確保臨床使用的安全性。',
-    img: 'https://picsum.photos/seed/product6/800/600'
+    title: '黃金酒',
+    desc: '將汽化食用金箔融入頂級酒液，展現極致奢華與獨特風味。',
+    img: ASSETS.about.products.wine
   }
 ];
 
@@ -42,7 +28,7 @@ export default function About() {
       {/* Background Image for the whole section */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://picsum.photos/seed/company/1920/1080"
+          src={ASSETS.about.companyBackground}
           alt="Company Background"
           fill
           className="object-cover"
@@ -80,7 +66,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-xl text-gray-700 leading-relaxed font-light mb-6"
           >
-            京華堂 (GNT) 致力於導入儀器、奈米科技與最高規格金屬工藝<br />
+            京華堂 (GNT) 致力於導入儀器、高純度真空汽化貴金屬生醫材料工藝<br />
             以突破性的專利技術引領無創美容的新紀元<br />
             運用20年的實證經驗<br />
             帶來更安全、更有效、更科學的治療體驗。
