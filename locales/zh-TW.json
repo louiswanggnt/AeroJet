@@ -1,27 +1,46 @@
 {
+  "metadata": {
+    "title": "AuJet 肌因槍 | 革命性無創美容藥物導入系統",
+    "description": "京華堂研發第六代 AuJet，以 405m/s 高速氣動力將微米級活性成分直達真皮層。無痛、無創、適用外泌體與玻尿酸。",
+    "faqSchema": {
+      "q1": "使用 AuJet 肌因槍療程會有痛感嗎？",
+      "a1": "完全無痛無創。AuJet 採用氣動與微米級霧化技術，以 405m/s 的速度瞬間穿透角質層，患者僅會感受到溫和的氣流與微震波按摩。",
+      "q2": "療程後需要多久的恢復期？",
+      "a2": "零恢復期。不產生開放性傷口，療程結束後即可立即恢復正常作息與上妝。"
+    }
+  },
   "common": {
     "brandName": "京華堂",
-    "productName": "AeroJet",
+    "productName": "AuJet",
+    "productSubtitle": "肌因槍",
     "contactSales": "聯絡業務專員",
     "menu": {
       "tech": "技術原理",
-      "treatment": "臨床實例",
+      "treatment": "案例",
       "evolution": "發展",
-      "about": "關於我們"
+      "about": "關於我們",
+      "gasEquipment": "氣體設備",
+      "contactInfo": "聯絡資訊"
     }
   },
   "hero": {
     "badge": "2024 全新第六代技術",
     "title1": "無創藥物導入",
     "title2": "肌膚再生的新紀元",
-    "desc": "AeroJet 採用專利氣動力技術，將活性成分霧化為微米級液滴，以超音速直達真皮層。",
+    "desc": "AuJet 採用專利氣動力技術，將活性成分霧化為微米級液滴，以超音速直達真皮層。",
     "highlight": "無創、高效、零恢復期",
     "btn1": "立即體驗",
-    "btn2": "觀看技術影片"
+    "btn2": "觀看技術影片",
+    "slides": {
+      "skin": "老化/皺紋",
+      "smile": "痘痘/問題皮膚",
+      "hair": "落髮/萎縮"
+    }
   },
   "tech": {
     "subtitle": "技術核心",
-    "title": "為什麼選擇 AeroJet？",
+    "title": "為什麼選擇 AuJet？",
+    "featuresTitle": "儀器優勢",
     "features": {
       "supersonic": {
         "title": "超音速導入",
@@ -34,81 +53,211 @@
         "stat": "Micron Level"
       },
       "pulse": {
-        "title": "專利脈衝技術",
-        "desc": "精準控制噴射頻率，在導入的同時提供溫和的氣動按摩效果。",
-        "stat": "Patented Pulse"
+        "title": "毫秒脈衝技術",
+        "desc": "精準控制噴射頻率，在導入的同時提供溫和的毫秒鎮波氣動按摩效果。",
+        "stat": "0.0006mL / Pulse"
       }
     },
-    "principles": {
-      "subtitle": "Technology & Principles",
-      "title": "技術原理",
-      "why": {
-        "title": "為何需要藥物導入裝置？",
-        "desc1": "人體皮膚的最外層「角質層」是天然的防禦屏障，能有效阻擋外界有害物質入侵，但同時也阻礙了保養品與藥物活性成分的吸收。傳統塗抹方式，僅有極少數（通常小於 1%）的活性成分能真正穿透角質層到達真皮層。",
-        "desc2": "為了解決這個問題，我們需要藥物導入裝置。透過物理性或化學性的輔助，暫時性地突破角質層屏障，將大分子活性成分（如玻尿酸、膠原蛋白、外泌體）直接送達肌膚深層，大幅提升吸收率與療效，同時避免傳統針筒注射帶來的疼痛與感染風險。"
-      },
-      "atomization": {
-        "title": "霧化保養品對經皮滲透的提高",
-        "desc1": "AeroJet 採用獨家的高壓氣流技術，將液態保養品或藥物瞬間霧化為微米級別的微小液滴。",
-        "desc2": "當這些極細微的液滴以高達 405m/s 的超音速噴射至皮膚表面時，強大的動能會瞬間撐開角質層細胞間的脂質通道，形成微小的「液態針」。這些微米液滴的體積遠小於毛孔與細胞間隙，因此能輕易穿透表皮，均勻散佈於真皮層中。",
-        "desc3": "相較於傳統塗抹，霧化導入不僅將經皮滲透率提升數十倍，更因為其均勻分佈的特性，能讓活性成分在肌膚底層發揮最大效用，達到深層保濕、組織修復與膠原蛋白增生的卓越效果。"
-      },
-      "comparison": {
-        "title": "與其他市售商品的對照",
-        "headers": ["AeroJet T6", "他牌"],
-        "rows": {
-          "speed": { "label": "藥物速度", "t6": "405 m/s", "other": "150~250 m/s" },
-          "brand": { "label": "品牌價值", "t6": "多國專利+國家認證\n20年以上專利維護", "other": "無" },
-          "mode": { "label": "發射模式", "t6": "脈衝式 (高效、按摩)\n連續式 (寧靜、舒適)", "other": "連續式" },
-          "safety": { "label": "安全性", "t6": "多項研究驗證", "other": "未確認" },
-          "system": { "label": "體系", "t6": "培訓課程\n專案輔導創業", "other": "培訓" },
-          "marketing": { "label": "行銷通路", "t6": "政府合作\n中日台企業聯手合作", "other": "網路行銷" },
-          "effect": { "label": "實際效果", "t6": "中研院論文合作\n千例實證", "other": "少數案例\n實效不明" }
+    "benefits": {
+      "title": "儀器的三大功效",
+      "items": {
+        "delivery": {
+          "title": "活性成分導入",
+          "desc": "將活性成分導入至皮膚，抵達問題根源、釋放真實效果"
+        },
+        "shockwave": {
+          "title": "震波按摩",
+          "desc": "脈衝式擊發，達到深層按摩效果，促進皮下血液循環"
+        },
+        "gas": {
+          "title": "氣體功效",
+          "desc": "搭配氣體，獲得更進一步的加持",
+          "co2": {
+            "title": "二氧化碳 (CO2)",
+            "desc": "促進微循環，解決黑眼圈、皮膚鬆弛"
+          },
+          "o2": {
+            "title": "氧氣 (O2)",
+            "desc": "細胞活性提高，促進術後修復、改善暗沉缺氧肌"
+          }
         }
-      },
-      "publications": {
-        "title": "發表期刊"
-      },
-      "patents": {
-        "title": "專利一覽"
       }
+    }
+  },
+  "technology": {
+    "subtitle": "Technology & Principles",
+    "title": "技術原理",
+    "why": {
+      "title": "皮膚為何需要導入裝置？",
+      "desc1": "人體皮膚的最外層「角質層」是天然的防禦屏障，能有效阻擋外界有害物質入侵，但同時也阻礙了保養品與藥物活性成分的吸收。傳統塗抹方式，僅有極少數（通常小於 1%）的活性成分能真正穿透角質層到達真皮層。",
+      "desc2": "為了解決這個問題，我們需要<strong>藥物導入裝置</strong>。透過物理性或化學性的輔助，暫時性地突破角質層屏障，將大分子活性成分（如玻尿酸、膠原蛋白、外泌體）直接送達肌膚深層，大幅提升吸收率與療效，同時避免傳統針筒注射帶來的疼痛與感染風險。"
+    },
+    "atomization": {
+      "title": "霧化保養品對經皮滲透的提高",
+      "desc1": "AuJet 採用獨家的高壓氣流技術，將液態保養品或藥物瞬間<strong>霧化為微米級別的微小液滴</strong>。",
+      "desc2": "當這些極細微的液滴以高達 405m/s 的超音速噴射至皮膚表面時，強大的動能會瞬間撐開角質層細胞間的脂質通道，形成微小的「液態針」。這些微米液滴的體積遠小於毛孔與細胞間隙，因此能輕易穿透表皮，均勻散佈於真皮層中。",
+      "desc3": "相較於傳統塗抹，霧化導入不僅將<strong>經皮滲透率提升數十倍</strong>，更因為其均勻分佈的特性，能讓活性成分在肌膚底層發揮最大效用，達到深層的藥物投遞、保養效果。"
+    },
+    "comparison": {
+      "title": "與其他市售商品的對照",
+      "headers": ["AuJet T6", "他牌"],
+      "rows": {
+        "gasSource": { "label": "氣體源", "t6": "多種氣體源\n二氧化碳、氮氣、氧氣\n高壓鋼瓶、空壓機", "other": "空壓機" },
+        "speed": { "label": "藥物速度", "t6": "405 m/s", "other": "150~250 m/s" },
+        "brand": { "label": "品牌價值", "t6": "多國專利+國家認證\n20年以上專利升級", "other": "不詳" },
+        "mode": { "label": "發射模式", "t6": "毫秒脈衝式 (滲透、震波)", "other": "連續噴灑" },
+        "safety": { "label": "安全性", "t6": "多項研究驗證", "other": "不詳" },
+        "system": { "label": "體系", "t6": "專業培訓課程\n創業輔導", "other": "操作教學" },
+        "marketing": { "label": "行銷通路", "t6": "國家型科學研究專案", "other": "不詳" },
+        "effect": { "label": "實際效果", "t6": "超過20年實證", "other": "不詳" }
+      }
+    },
+    "trials": {
+      "title": "試驗驗證",
+      "items": [
+        {
+          "year": "2011",
+          "partner": "南科計劃",
+          "title": "經皮導入試驗\n玻尿酸、汽化金顆粒"
+        },
+        {
+          "year": "2016",
+          "partner": "台灣科技大學\n醫學工程研究所",
+          "title": "仿體豬皮滲透深度試驗"
+        },
+        {
+          "year": "2018",
+          "partner": "工研院生醫所",
+          "title": "細胞噴灑"
+        }
+      ]
+    },
+    "journals": {
+      "title": "期刊發表",
+      "items": [
+        {
+          "year": "2014",
+          "partner": "輔仁大學",
+          "title": "Gas-injection of gold nanoparticles and anti-oxidants promotes diabetic wound healing."
+        },
+        {
+          "year": "2017",
+          "partner": "台灣科技大學",
+          "title": "Evaluating the effectiveness of a novel atomized liquid needle-free transdermal delivery system"
+        }
+      ]
     }
   },
   "evolution": {
     "subtitle": "Evolution",
-    "title": "AeroJet 世代演進",
-    "desc": "從 2005 年第一代落地型設備到 2025 年第六代手攜型 AeroJet T6，我們不斷突破技術瓶頸，實現更精準、更輕便的無創導入。",
-    "tableTitle": "各世代規格對照",
-    "specs": "規格參數",
-    "type": "型態",
-    "weight": "重量",
-    "speed": "給藥速度",
-    "load": "藥物裝載",
-    "atomizer": "霧化器",
-    "design": "槍頭設計",
-    "output": "單次輸出量",
-    "gun": "槍體系統",
-    "gen": "世代",
-    "control": "控制系統"
+    "title": "AuJet 世代演進",
+    "desc": "從 2005 年第一代落地型設備\n到 2025 年第六代手攜型 AuJet T6\n二十年來我們不斷突破技術瓶頸\n實現更精準、更輕便的無創導入技術。",
+    "tableTitle": "2005~各世代規格對照",
+    "specHeaders": {
+      "specs": "規格參數",
+      "t1": "T1",
+      "t2": "T2",
+      "t3": "T3",
+      "t4": "T4",
+      "t5": "T5",
+      "t6": "T6"
+    },
+    "specRows": {
+      "type": { "label": "型態", "t1": "落地型", "t2": "落地型", "t3": "落地型 (含空壓機)", "t4": "桌上型", "t5": "手攜型", "t6": "手攜型 (LED螢幕)" },
+      "weight": { "label": "重量", "t1": "~80kg", "t2": "~70kg", "t3": "60 kg", "t4": "5 kg", "t5": "1 kg", "t6": "0.76 kg" },
+      "speed": { "label": "給藥速度", "t1": "1發/秒", "t2": "1發/秒", "t3": "2發/秒", "t4": "2發/秒", "t5": "6發/秒", "t6": "10發/秒" },
+      "load": { "label": "藥物裝載", "t1": "針筒", "t2": "針筒", "t3": "針筒", "t4": "針筒", "t5": "安瓶", "t6": "安瓶" },
+      "atomizer": { "label": "霧化器", "t1": "專利文式管", "t2": "專利文式管", "t3": "專利文式管", "t4": "Type 1 (拋棄式)", "t5": "Type 2 (拋棄式)", "t6": "Type 2 (拋棄式)" },
+      "design": { "label": "槍頭設計", "t1": "固定式", "t2": "固定式", "t3": "固定式", "t4": "插銷墊片", "t5": "插銷墊片", "t6": "磁吸式 (拋棄式)" },
+      "output": { "label": "單次輸出量", "t1": "3μL", "t2": "3μL", "t3": "3μL", "t4": "1 μL", "t5": "0.6 μL", "t6": "0.1 μL" }
+    },
+    "carouselLabels": {
+      "t3": "T3 世代",
+      "t4": "T4 世代",
+      "t5": "T5 世代",
+      "t6": "T6 世代"
+    },
+    "timelineHeaders": {
+      "gun": "槍體系統",
+      "gen": "世代",
+      "control": "控制系統"
+    },
+    "timeline": {
+      "t1t3": {
+        "year": "2005 ~ 2008",
+        "noGunData": "（研發初期，無對應槍體資料）",
+        "controlSpecs": ["重量 80 kg", "落地型", "含空壓機", "每秒最多 1 發"]
+      },
+      "t4": {
+        "year": "2010",
+        "gunTitle": "步進馬達推動給藥系統",
+        "gunIssue": "缺：定量不精準(活塞阻力造成給藥劑量不穩定)",
+        "gunSpecs": ["藥物裝載系統(針筒)", "type 1 加壓霧化器(拋棄式)", "步進馬達", "輸出液體 1 μL"],
+        "controlSpecs": ["重量 5 kg", "桌上型", "每秒最多 2 發"]
+      },
+      "t5": {
+        "year": "2016",
+        "gunSpecs": ["藥物裝載系統(安瓶)", "type 2 加壓霧化器(拋棄式)", "槍頭較T6小", "輸出液體 0.6 μL"],
+        "controlSpecs": ["重量 950 g", "手攜型", "給藥速度分三種燈號", "每秒最多 6 發"]
+      },
+      "t6": {
+        "year": "2025",
+        "gunSpecs": ["藥物裝載系統(安瓶)", "type 2 加壓霧化器(拋棄式)", "磁吸式槍頭(可拋棄式)", "輸出液體 0.1 μL"],
+        "controlSpecs": ["重量 760 g", "手攜型", "LED螢幕", "每秒最多 10 發"]
+      }
+    },
+    "patents": {
+      "title": "多國專利一覽",
+      "items": [
+        { "title": "可承載液相物質之組合式文氏管噴霧器裝置", "country": "臺灣", "type": "新型", "number": "M381463", "year": "" },
+        { "title": "藥物輸送裝置", "country": "臺灣", "type": "設計", "number": "D145553", "year": "" },
+        { "title": "藥物輸送裝置", "country": "臺灣", "type": "發明", "number": "I400103", "year": "" },
+        { "title": "藥物輸送裝置", "country": "中國", "type": "發明", "number": "CN102133444B", "year": "" },
+        { "title": "藥物輸送裝置", "country": "臺灣", "type": "發明", "number": "I532513", "year": "" },
+        { "title": "一種內置定量推進器之藥物加壓輸送裝置", "country": "臺灣", "type": "發明", "number": "I417120", "year": "" },
+        { "title": "一種內置定量推進器之藥物加壓輸送裝置", "country": "美國", "type": "發明", "number": "US 8,317,740 B1", "year": "" },
+        { "title": "無針型注射系統及其注射方法", "country": "臺灣", "type": "發明", "number": "I532511", "year": "" },
+        { "title": "無針型注射系統及其注射方法", "country": "中國", "type": "發明", "number": "CN104368067B", "year": "" },
+        { "title": "無針型注射系統及其注射方法", "country": "美國", "type": "發明", "number": "US9,457,151", "year": "" },
+        { "title": "無針型注射系統及其注射方法", "country": "歐盟", "type": "發明", "number": "EP2837395", "year": "" },
+        { "title": "無針型注射系統及其注射方法", "country": "日本", "type": "發明", "number": "5689158", "year": "" },
+        { "title": "改良式定量霧化加壓裝置", "country": "臺灣", "type": "新型", "number": "M539954", "year": "" },
+        { "title": "改良式定量霧化加壓裝置", "country": "中國", "type": "新型", "number": "CN206587243U", "year": "" },
+        { "title": "改良式定量霧化加壓裝置", "country": "日本", "type": "新型", "number": "JP3208232U", "year": "" },
+        { "title": "改良之無針注射裝置", "country": "臺灣", "type": "發明", "number": "I670096", "year": "" },
+        { "title": "改良之無針注射裝置", "country": "臺灣", "type": "發明", "number": "I735246", "year": "" },
+        { "title": "改良之無針注射裝置", "country": "臺灣", "type": "新型", "number": "M611538", "year": "" },
+        { "title": "改良之無針注射裝置", "country": "中國", "type": "新型", "number": "CN214911873U", "year": "" }
+      ]
+    }
   },
   "treatment": {
     "subtitle": "Clinical Cases",
     "title": "臨床實例",
-    "desc": "見證 AeroJet 的真實改變",
+    "desc": "見證 AuJet 的真實改變",
     "before": "Before",
-    "after": "After"
+    "after": "After",
+    "patientAge": "患者年齡",
+    "sessions": "課程 次數",
+    "duration": "每次時間",
+    "cases": [
+      { "id": 1, "problem": "靜態紋", "age": "48歲", "sessions": "5次", "duration": "30min", "startTime": "12/26", "endTime": "1/2" },
+      { "id": 2, "problem": "暗瘡(痘痘)", "age": "32歲", "sessions": "4次", "duration": "30min", "startTime": "2025/12/21", "endTime": "2026/01/18" },
+      { "id": 3, "problem": "臉部拉提", "age": "35歲", "sessions": "1次", "duration": "30min", "startTime": "09/05", "endTime": "09/05" },
+      { "id": 4, "problem": "細紋", "age": "42歲", "sessions": "1次", "duration": "45min", "startTime": "07/20", "endTime": "7/20" },
+      { "id": 5, "problem": "先天性皮膚炎", "age": "19歲", "sessions": "2次", "duration": "60min", "startTime": "07/29", "endTime": "08/04" },
+      { "id": 6, "problem": "頭皮毛囊萎縮與落髮", "age": "40歲", "sessions": "4次", "duration": "40min", "startTime": "2023/11/06", "endTime": "2024/12/01" },
+      { "id": 7, "problem": "脂肪瘤", "age": "35歲", "sessions": "1次", "duration": "20min", "startTime": "11/01", "endTime": "11/01" }
+    ]
   },
   "about": {
     "subtitle": "About GNT",
     "title": "關於京華堂",
-    "desc": "京華堂 (GNT) 致力於導入儀器、奈米科技與最高規格金屬工藝，以突破性的專利技術引領無創美容的新紀元，運用20年的實證經驗，帶來更安全、更有效、更科學的治療體驗。",
+    "desc": "京華堂 (GNT) 致力於皮膚照料設備、高純度真空汽化貴金屬生醫材料\n以突破性的專利技術引領無創美容的新紀元\n運用20年的實證經驗\n帶來更安全、更有效、更科學的治療體驗。",
     "products": {
-      "p1": { "title": "美容藥物導入儀", "desc": "結合流體力學與精密工程，提供無創、無痛的高效活性成分導入解決方案。" },
-      "p2": { "title": "奈米金屬(奈米金、奈米銀)工藝", "desc": "專研奈米金等貴金屬材料，應用於生醫感測與藥物載體，提升生物相容性。" },
-      "p3": { "title": "金箔酒", "desc": "將高純度食用級金箔融入頂級酒液，展現極致奢華與獨特風味。" },
-      "p4": { "title": "黃金中藥材", "desc": "結合傳統中醫藥理與現代奈米金科技，提升藥材活性與吸收率。" },
-      "p5": { "title": "保養品開發", "desc": "開發專屬活性成分配方，包含高濃度玻尿酸與外泌體，將保養效果推向極致。" },
-      "p6": { "title": "醫材(氣動床、導入儀)", "desc": "自主研發高階醫療設備，取得多國專利與認證，確保臨床使用的安全性。" }
+      "p1": { "title": "藥物/美容液導入儀", "desc": "結合流體力學與精密工程，提供無創、無痛的高效活性成分導入解決方案。" },
+      "p2": { "title": "汽化金、汽化銀工藝", "desc": "專研汽化金屬材料，應用於食品、生技與藥物發展。" },
+      "p3": { "title": "黃金酒", "desc": "將汽化食用金箔融入頂級酒液，展現極致奢華與獨特風味。" }
     }
   },
   "faq": {
@@ -116,40 +265,100 @@
     "title": "解答您的疑惑",
     "questions": [
       {
-        "q": "使用 AeroJet 療程會有痛感嗎？",
+        "q": "使用 AuJet 療程會有痛感嗎？",
         "a": "無痛無創。由於是氣體接觸，患者僅會感受到溫和的氣流與微震波按摩。"
       },
       {
         "q": "療程後需要多久的恢復期？",
-        "a": "零恢復期。不產生開放性傷口，療程結束後進行保濕即可。"
+        "a": "零恢復期，無痛無創，療程結束後進行保濕即可。"
       },
       {
         "q": "建議的療程頻率為何？",
         "a": "一般建議初期 每週一次，效果進入穩定後，每 2-3 個月進行一次保養。"
       },
       {
-        "q": "AeroJet 可以搭配哪些活性成分？",
-        "a": "極為廣泛。包含玻尿酸、生長因子、外泌體 、及各式液態化妝品。由於是物理性導入，不會破壞成分活性。只要是無沉澱物、並且分子量<80000 Da皆可作施打"
+        "q": "AuJet 可以搭配哪些活性成分？",
+        "a": "主要使用汽化金、銀，亦可包含小分子玻尿酸、生長因子、外泌體 、及各式液態化妝品。由於是物理性導入，不會破壞成分活性。只要是無沉澱物之溶液皆可作施打"
       },
       {
         "q": "可否配合其他美容儀、導入儀使用？",
-        "a": "完全可以。AeroJet只將藥物做物理導入，不需擔心其他影響。"
+        "a": "完全可以。AuJet只將成分做物理滲透，不需擔心其他影響。"
       },
       {
-        "q": "要搭配的耗材？",
-        "a": "藥物安瓶、文式管、衛生頭蓋。為防止交叉感染，這些部件均建議使用後拋棄。"
+        "q": "主要耗材？",
+        "a": "成分安瓶、文式管、衛生頭蓋。為防止交叉感染，這些部件均建議使用後拋棄。"
+      },
+      {
+        "q": "一次療程要多久？",
+        "a": "依據療程不同，單次約25~40 分鐘。"
+      },
+      {
+        "q": "有哪些部位不能施打？",
+        "a": "脆弱黏膜及周圍 (眼/耳)/開放性傷口/表皮血管/神經病變。"
       },
       {
         "q": "一般美容師可使用嗎？",
-        "a": "AeroJet T6 是針對美容師設計的最新機種。我們延續T4世代 醫材的技術，將最高公益的規格，以最安全的手法推薦給您。"
+        "a": "AuJet T6 是針對美容設計的最新機種。我們延續T4世代 醫材的技術，將皮膚及毛囊滲透最高技術的規格，以最安全、輕巧的設計推薦給您。"
       }
     ]
   },
+  "gasEquipment": {
+    "subtitle": "氣體設備",
+    "title": "適用建議",
+    "description": "AuJet需要額外配備高壓氣體裝置、以提供活性成分加速的動力。建議氣體壓力達100 psi以達最大效果。依照場地需求，可選擇不同氣體源。",
+    "sourceComparisonsTitle": "氣體來源比較",
+    "cylinderGasTypesTitle": "高壓鋼瓶可用氣體",
+    "usageLabel": "使用場所",
+    "advantagesLabel": "優點",
+    "limitationsLabel": "注意事項",
+    "characteristicsLabel": "特性",
+    "suitableForLabel": "適用族群",
+    "sourceComparisons": [
+      {
+        "sourceName": "高壓鋼瓶",
+        "requirementText": "輕巧、簡易、乾淨\n但需要定時充氣。 \n \n一次療程 (5000發)約使用 160 ml 的氣體 \n可選擇 CO2、N2、O2 或常見惰性氣體",
+        "usageScenario": "攜帶式",
+        "advantages": ["攜帶方便", "氣體乾淨、氣壓充足"],
+        "limitations": ["氣體耗盡時需做氣體充填", "須注意高溫、震動、固定"]
+      },
+      {
+        "sourceName": "空氣壓縮機",
+        "requirementText": "較大、初期設定需時間\n不須充氣，自主吸收周圍空氣\n \n馬達：350W\n最大壓力：>100psi (7 kgf/cm2)\n出氣量：9 L/min\n容量：3L",
+        "usageScenario": "定點式",
+        "advantages": ["可定點施打", "不會凍結"],
+        "limitations": ["運作時產生噪音", "會受空氣品質影響，建議搭配 HEPA 濾網過濾空氣"]
+      }
+    ],
+    "cylinderGasTypes": [
+      { "gasName": "二氧化碳 (CO2)", "characteristics": ["促進微循環", "血管擴張", "血管、膠原蛋白生成"], "suitableFor": ["黑眼圈、妊娠紋", "皮膚鬆弛、橘皮組織"] },
+      { "gasName": "氧氣 (O2)", "characteristics": ["厭氧菌毒性", "細胞活性提高"], "suitableFor": ["痤瘡(痘痘)", "暗沉缺氧肌", "術後修復"] },
+      { "gasName": "氮氣 (N2)", "characteristics": ["安全"], "suitableFor": ["皆可"] }
+    ]
+  },
+  "contact": {
+    "subtitle": "聯絡資訊",
+    "title": "京華堂聯絡資訊",
+    "companyInfoTitle": "公司資訊",
+    "lineSupportTitle": "LINE 客服",
+    "qrPlaceholderTitle": "QRCode 預留區",
+    "qrPlaceholderDesc": "此區塊預留放置 LINE 客服 QRCode\n後續可直接替換為正式圖檔。",
+    "details": {
+      "company": { "label": "公司名稱", "value": "京華堂實業股份有限公司\nGoldNanoTech. Inc" },
+      "address": { "label": "地址", "value": "114-91\n台北市內湖區瑞光路258巷52號1樓\nNo.52, Lane 258, Jui-Kuang Road, Taipei 114, Taiwan" },
+      "phone": { "label": "電話", "value": "886-2-2658-1622" },
+      "taxId": { "label": "統一編號", "value": "84478111" },
+      "fax": { "label": "傳真", "value": "886-2-2658-1957" },
+      "email": { "label": "郵件", "value": "info@gnt.com.tw" },
+      "hours": { "label": "營業時間", "value": "9:00~18:00" }
+    }
+  },
   "footer": {
-    "contact": "聯絡我們",
-    "address": "台北市內湖區瑞光路xxx號",
-    "phone": "02-1234-5678",
-    "email": "info@gnt.com.tw",
-    "copyright": "© 2024 京華堂實業股份有限公司. All rights reserved."
+    "ctaTitle": "準備好引進AuJet.T6",
+    "ctaHighlight": "極致無創給藥技術",
+    "ctaDesc": "提升您的競爭力，為病患提供無痛、高效、零恢復期的革命性療程體驗。",
+    "ctaBtn": "預約儀器展示",
+    "copyright": "© 2026 京華堂 Chyng Hwang. All rights reserved.",
+    "privacy": "隱私權政策",
+    "terms": "服務條款"
   }
 }

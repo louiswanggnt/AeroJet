@@ -32,24 +32,24 @@ export const ASSETS = {
   },
   treatment: {
     case1: {
-      before: '/images/treatment/1b.jpg',
-      after: '/images/treatment/1a.jpg',
+      before: '/images/treatment/1b.png',
+      after: '/images/treatment/1a.png',
     },
     case2: {
       before: '/images/treatment/2b.jpg',
       after: '/images/treatment/2a.jpg',
     },
     case3: {
-      before: '/images/treatment/3b.jpg',
-      after: '/images/treatment/3a.jpg',
+      before: '/images/treatment/3b.png',
+      after: '/images/treatment/3a.png',
     },
     case4: {
-      before: '/images/treatment/4b.jpg',
-      after: '/images/treatment/4a.jpg',
+      before: '/images/treatment/4b.png',
+      after: '/images/treatment/4a.png',
     },
     case5: {
-      before: '/images/treatment/5b.jpg',
-      after: '/images/treatment/5a.jpg',
+      before: '/images/treatment/5b.png',
+      after: '/images/treatment/5a.png',
     },
     case6: {
       before: '/images/treatment/6b.jpg',
@@ -59,6 +59,10 @@ export const ASSETS = {
       before: '/images/treatment/7b.jpg',
       after: '/images/treatment/7a.jpg',
     },
+  },
+  gasEquipment: {
+    cylinder: 'https://picsum.photos/seed/cylinder/800/600',
+    compressor: 'https://picsum.photos/seed/compressor/800/600',
   },
   about: {
     companyBackground: 'https://picsum.photos/seed/company/1920/1080',

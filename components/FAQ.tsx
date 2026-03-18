@@ -3,49 +3,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Plus, Minus } from 'lucide-react';
-
-const faqs = [
-
- {
-  q: "使用 AeroJet 療程會有痛感嗎？",
-  a: "無痛無創。由於是氣體接觸，患者僅會感受到溫和的氣流與微震波按摩。"
- },
- {
-  q: "療程後需要多久的恢復期？",
-  a: "零恢復期，無痛無創，療程結束後進行保濕即可。"
- },
- {
-  q: "建議的療程頻率為何？",
-  a: "一般建議初期 每週一次，效果進入穩定後，每 2-3 個月進行一次保養。"
- },
- {
-  q: "AeroJet 可以搭配哪些活性成分？",
-  a: "極為廣泛。包含小分子玻尿酸、生長因子、外泌體 、及各式液態化妝品。由於是物理性導入，不會破壞成分活性。只要是無沉澱物之溶液皆可作施打"
-},
-{
- q: "可否配合其他美容儀、導入儀使用？",
- a: "完全可以。AeroJet只將成分做物理滲透，不需擔心其他影響。"
-},
-{
- q: "要搭配的耗材？",
- a: "成分安瓶、文式管、衛生頭蓋。為防止交叉感染，這些部件均建議使用後拋棄。"
-},
-{
- q: "一次療程要多久？",
- a: "AeroJet T6 是針對美容設計的最新機種。我們延續T4世代 醫材的技術，將皮膚及毛囊滲透最高技術的規格，以最安全、輕巧的設計推薦給您。"
-},
-{
- q: "有哪些部位不能施打？",
- a: "脆弱黏膜及周圍 (眼/耳)/開放性傷口/表皮血管/神經病變。"
-},
-{
- q: "一般美容師可使用嗎？",
- a: "依據療程不同，單次約25~40 分鐘"
-}
-];
+import { useTranslations } from 'next-intl';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const t = useTranslations('faq');
+
+  const questions: Array<{ q: string; a: string }> = t.raw('questions');
 
   return (
     <section id="faq" className="py-24 bg-slate-50 px-6">
@@ -57,7 +21,7 @@ export default function FAQ() {
             viewport={{ once: true }}
             className="text-sm font-bold text-blue-600 tracking-widest uppercase mb-3"
           >
-            常見問題
+            {t('subtitle')}
           </motion.h2>
           <motion.h3 
             initial={{ opacity: 0, y: 10 }}
@@ -66,12 +30,12 @@ export default function FAQ() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl font-bold text-gray-900"
           >
-            解答您的疑惑
+            {t('title')}
           </motion.h3>
         </div>
 
         <div className="space-y-4">
-          {faqs.map((faq, idx) => {
+          {questions.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
               <motion.div 

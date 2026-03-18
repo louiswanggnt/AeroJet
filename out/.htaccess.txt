@@ -1,0 +1,17 @@
+# 啟動網址重寫引擎
+RewriteEngine On
+
+# 1. 解決首頁問題：如果訪問根目錄 (沒有任何後綴)，自動跳轉到繁體中文首頁
+RewriteRule ^$ /zh-TW [R=301,L]
+
+# 2. 解決乾淨網址問題：隱藏 .html 副檔名
+# 如果請求的不是一個實體檔案 (!-f) 也不是實體目錄 (!-d)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# 且該名稱加上 .html 後的實體檔案存在
+RewriteCond %{REQUEST_FILENAME}.html -f
+# 則讀取該 .html 檔案
+RewriteRule ^(.*)$ $1.html [L]
+
+# 3. 指定自訂的 404 錯誤頁面
+ErrorDocument 404 /404.html

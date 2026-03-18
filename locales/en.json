@@ -1,27 +1,46 @@
 {
+  "metadata": {
+    "title": "AuJet | Revolutionary Non-invasive Drug Delivery System",
+    "description": "GNT's 6th-gen AuJet delivers micron-sized active ingredients to the dermis at 405m/s. Painless, non-invasive, suitable for exosomes and hyaluronic acid.",
+    "faqSchema": {
+      "q1": "Is the AuJet treatment painful?",
+      "a1": "Completely painless and non-invasive. AuJet uses pneumatic and micron-level atomization technology to instantly penetrate the stratum corneum at 405m/s. Patients only feel a gentle airflow and micro-shockwave massage.",
+      "q2": "How long is the recovery period after treatment?",
+      "a2": "Zero recovery period. No open wounds are created, and normal daily routine and makeup can be resumed immediately after treatment."
+    }
+  },
   "common": {
     "brandName": "GNT",
-    "productName": "AeroJet",
+    "productName": "AuJet",
+    "productSubtitle": "Skin Gun",
     "contactSales": "Contact Sales",
     "menu": {
       "tech": "Technology",
       "treatment": "Treatment",
       "evolution": "Evolution",
-      "about": "About Us"
+      "about": "About Us",
+      "gasEquipment": "Gas Equipment",
+      "contactInfo": "Contact"
     }
   },
   "hero": {
     "badge": "2024 6th Generation Technology",
     "title1": "Non-invasive Drug Delivery",
     "title2": "New Era of Skin Regeneration",
-    "desc": "AeroJet uses patented aerodynamic technology to atomize active ingredients into micron-sized droplets, delivering them directly to the dermis at supersonic speeds.",
+    "desc": "AuJet uses patented aerodynamic technology to atomize active ingredients into micron-sized droplets, delivering them directly to the dermis at supersonic speeds.",
     "highlight": "Non-invasive, Efficient, Zero Downtime",
     "btn1": "Experience Now",
-    "btn2": "Watch Video"
+    "btn2": "Watch Video",
+    "slides": {
+      "skin": "Aging / Skin Elasticity",
+      "smile": "Acne / Problem Skin Solutions",
+      "hair": "Hair Growth / Effective Delivery"
+    }
   },
   "tech": {
     "subtitle": "Core Technology",
-    "title": "Why Choose AeroJet?",
+    "title": "Why Choose AuJet?",
+    "featuresTitle": "Device Advantages",
     "features": {
       "supersonic": {
         "title": "Supersonic Delivery",
@@ -34,110 +53,679 @@
         "stat": "Micron Level"
       },
       "pulse": {
-        "title": "Patented Pulse Tech",
-        "desc": "Precisely controls injection frequency, providing a gentle pneumatic massage effect during delivery.",
-        "stat": "Patented Pulse"
+        "title": "Millisecond Pulse Tech",
+        "desc": "Precisely controls injection frequency, providing a gentle millisecond shockwave pneumatic massage effect during delivery.",
+        "stat": "0.0006mL / Pulse"
       }
     },
-    "principles": {
-      "subtitle": "Technology & Principles",
-      "title": "Technology Principles",
-      "why": {
-        "title": "Why Need Drug Delivery Devices?",
-        "desc1": "The outermost layer of human skin, the 'stratum corneum', is a natural defense barrier that effectively blocks harmful external substances but also hinders the absorption of skincare products and active drug ingredients. Traditional application methods allow only a very small amount (usually less than 1%) of active ingredients to truly penetrate the stratum corneum and reach the dermis.",
-        "desc2": "To solve this problem, we need drug delivery devices. Through physical or chemical assistance, we temporarily break through the stratum corneum barrier to deliver macromolecular active ingredients (such as hyaluronic acid, collagen, exosomes) directly to the deep layers of the skin, significantly improving absorption and efficacy while avoiding the pain and infection risks associated with traditional syringe injections."
-      },
-      "atomization": {
-        "title": "Enhanced Transdermal Penetration via Atomization",
-        "desc1": "AeroJet uses exclusive high-pressure airflow technology to instantly atomize liquid skincare products or drugs into micron-sized droplets.",
-        "desc2": "When these extremely fine droplets are sprayed onto the skin surface at a supersonic speed of up to 405m/s, the powerful kinetic energy instantly opens the lipid channels between stratum corneum cells, forming tiny 'liquid needles'. The volume of these micron droplets is far smaller than pores and intercellular spaces, allowing them to easily penetrate the epidermis and distribute evenly in the dermis.",
-        "desc3": "Compared to traditional application, atomized delivery not only increases transdermal penetration by dozens of times but also, due to its uniform distribution, allows active ingredients to exert maximum effect in the underlying skin layers, achieving excellent results in deep hydration, tissue repair, and collagen proliferation."
-      },
-      "comparison": {
-        "title": "Comparison with Other Market Products",
-        "headers": ["AeroJet T6", "Others"],
-        "rows": {
-          "speed": { "label": "Drug Speed", "t6": "405 m/s", "other": "150~250 m/s" },
-          "brand": { "label": "Brand Value", "t6": "Multi-national Patents + National Certification\n20+ Years Patent Maintenance", "other": "None" },
-          "mode": { "label": "Emission Mode", "t6": "Pulse (Efficient, Massage)\nContinuous (Quiet, Comfortable)", "other": "Continuous" },
-          "safety": { "label": "Safety", "t6": "Verified by Multiple Studies", "other": "Unconfirmed" },
-          "system": { "label": "System", "t6": "Training Courses\nProject Guidance for Startups", "other": "Training" },
-          "marketing": { "label": "Marketing Channels", "t6": "Government Cooperation\nChina-Japan-Taiwan Enterprise Cooperation", "other": "Online Marketing" },
-          "effect": { "label": "Actual Effect", "t6": "Academia Sinica Paper Cooperation\nThousands of Proven Cases", "other": "Few Cases\nEffect Unclear" }
+    "benefits": {
+      "title": "Three Core Effects of the Device",
+      "items": {
+        "delivery": {
+          "title": "Active Ingredient Delivery",
+          "desc": "Deliver active ingredients into the skin to reach root causes and unlock real efficacy."
+        },
+        "shockwave": {
+          "title": "Shockwave Massage",
+          "desc": "Pulse-based firing creates deep massage effects and promotes subcutaneous blood circulation."
+        },
+        "gas": {
+          "title": "Gas Benefits",
+          "desc": "Combined with gases for additional therapeutic support.",
+          "co2": {
+            "title": "Carbon Dioxide (CO2)",
+            "desc": "Promotes microcirculation and helps with dark circles and skin laxity."
+          },
+          "o2": {
+            "title": "Oxygen (O2)",
+            "desc": "Improves cell activity, supports post-treatment recovery, and improves dull hypoxic skin."
+          }
         }
-      },
-      "publications": {
-        "title": "Published Journals"
-      },
-      "patents": {
-        "title": "Patents List"
       }
+    }
+  },
+  "technology": {
+    "subtitle": "Technology & Principles",
+    "title": "Technology Principles",
+    "why": {
+      "title": "Why Does Skin Need Delivery Devices?",
+      "desc1": "The outermost layer of human skin, the 'stratum corneum', is a natural defense barrier that effectively blocks harmful external substances but also hinders the absorption of skincare products and active drug ingredients. Traditional application methods allow only a very small amount (usually less than 1%) of active ingredients to truly penetrate the stratum corneum and reach the dermis.",
+      "desc2": "To solve this problem, we need <strong>drug delivery devices</strong>. Through physical or chemical assistance, we temporarily break through the stratum corneum barrier to deliver macromolecular active ingredients (such as hyaluronic acid, collagen, exosomes) directly to the deep layers of the skin, significantly improving absorption and efficacy while avoiding the pain and infection risks associated with traditional syringe injections."
+    },
+    "atomization": {
+      "title": "Enhanced Transdermal Penetration via Atomization",
+      "desc1": "AuJet uses exclusive high-pressure airflow technology to instantly atomize liquid skincare products or drugs into <strong>micron-sized droplets</strong>.",
+      "desc2": "When these extremely fine droplets are sprayed onto the skin surface at a supersonic speed of up to 405m/s, the powerful kinetic energy instantly opens the lipid channels between stratum corneum cells, forming tiny 'liquid needles'. The volume of these micron droplets is far smaller than pores and intercellular spaces, allowing them to easily penetrate the epidermis and distribute evenly in the dermis.",
+      "desc3": "Compared to traditional application, atomized delivery not only <strong>increases transdermal penetration by dozens of times</strong> but also, due to its uniform distribution, allows active ingredients to exert maximum effect in the underlying skin layers, achieving excellent results in deep drug delivery and skincare."
+    },
+    "comparison": {
+      "title": "Comparison with Other Products",
+      "headers": [
+        "AuJet T6",
+        "Others"
+      ],
+      "rows": {
+        "gasSource": {
+          "label": "Gas Source",
+          "t6": "Multiple gas sources\nCO2, Nitrogen, Oxygen\nHigh-pressure cylinders, Compressor",
+          "other": "Compressor"
+        },
+        "speed": {
+          "label": "Drug Speed",
+          "t6": "405 m/s",
+          "other": "150~250 m/s"
+        },
+        "brand": {
+          "label": "Brand Value",
+          "t6": "Multi-national Patents + National Certification\n20+ Years Patent Upgrades",
+          "other": "Unknown"
+        },
+        "mode": {
+          "label": "Emission Mode",
+          "t6": "Millisecond Pulse (Penetration, Shockwave)",
+          "other": "Continuous Spray"
+        },
+        "safety": {
+          "label": "Safety",
+          "t6": "Verified by Multiple Studies",
+          "other": "Unknown"
+        },
+        "system": {
+          "label": "System",
+          "t6": "Professional Training Courses\nStartup Guidance",
+          "other": "Operation Training"
+        },
+        "marketing": {
+          "label": "Marketing Channels",
+          "t6": "National Science Research Projects",
+          "other": "Unknown"
+        },
+        "effect": {
+          "label": "Actual Effect",
+          "t6": "Over 20 Years of Evidence",
+          "other": "Unknown"
+        }
+      }
+    },
+    "trials": {
+      "title": "Experimental Validation",
+      "items": [
+        {
+          "year": "2011",
+          "partner": "Southern Taiwan Science Park Project",
+          "title": "Transdermal delivery test\nHyaluronic acid, vaporized gold nanoparticles"
+        },
+        {
+          "year": "2016",
+          "partner": "National Taiwan University of Science and Technology\nGraduate Institute of Biomedical Engineering",
+          "title": "Permeation depth test on porcine skin phantom"
+        },
+        {
+          "year": "2018",
+          "partner": "ITRI Biomedical Research Institute",
+          "title": "Cell spraying test"
+        }
+      ]
+    },
+    "journals": {
+      "title": "Journal Publications",
+      "items": [
+        {
+          "year": "2014",
+          "partner": "Fu Jen Catholic University",
+          "title": "Gas-injection of gold nanoparticles and anti-oxidants promotes diabetic wound healing."
+        },
+        {
+          "year": "2017",
+          "partner": "National Taiwan University of Science and Technology",
+          "title": "Evaluating the effectiveness of a novel atomized liquid needle-free transdermal delivery system"
+        }
+      ]
     }
   },
   "evolution": {
     "subtitle": "Evolution",
-    "title": "AeroJet Evolution",
-    "desc": "From the first generation of floor-standing equipment in 2005 to the sixth generation of handheld AeroJet T6 in 2025, we continue to break through technical bottlenecks to achieve more precise and lighter non-invasive delivery.",
-    "tableTitle": "Generation Specifications Comparison",
-    "specs": "Specifications",
-    "type": "Type",
-    "weight": "Weight",
-    "speed": "Delivery Speed",
-    "load": "Drug Loading",
-    "atomizer": "Atomizer",
-    "design": "Gun Head Design",
-    "output": "Single Output",
-    "gun": "Gun System",
-    "gen": "Generation",
-    "control": "Control System"
+    "title": "AuJet Evolution",
+    "desc": "From the first generation of floor-standing equipment in 2005\nto the sixth generation handheld AuJet T6 in 2025\nwe continue to break through technical bottlenecks\nachieving more precise and lighter non-invasive delivery.",
+    "tableTitle": "Generation Specifications Comparison (2005~)",
+    "specHeaders": {
+      "specs": "Specifications",
+      "t1": "T1",
+      "t2": "T2",
+      "t3": "T3",
+      "t4": "T4",
+      "t5": "T5",
+      "t6": "T6"
+    },
+    "specRows": {
+      "type": {
+        "label": "Type",
+        "t1": "Floor-standing",
+        "t2": "Floor-standing",
+        "t3": "Floor-standing (with compressor)",
+        "t4": "Desktop",
+        "t5": "Handheld",
+        "t6": "Handheld (LED screen)"
+      },
+      "weight": {
+        "label": "Weight",
+        "t1": "~80kg",
+        "t2": "~70kg",
+        "t3": "60 kg",
+        "t4": "5 kg",
+        "t5": "1 kg",
+        "t6": "0.76 kg"
+      },
+      "speed": {
+        "label": "Delivery Speed",
+        "t1": "1 shot/sec",
+        "t2": "1 shot/sec",
+        "t3": "2 shots/sec",
+        "t4": "2 shots/sec",
+        "t5": "6 shots/sec",
+        "t6": "10 shots/sec"
+      },
+      "load": {
+        "label": "Drug Loading",
+        "t1": "Syringe",
+        "t2": "Syringe",
+        "t3": "Syringe",
+        "t4": "Syringe",
+        "t5": "Ampoule",
+        "t6": "Ampoule"
+      },
+      "atomizer": {
+        "label": "Atomizer",
+        "t1": "Patented Venturi tube",
+        "t2": "Patented Venturi tube",
+        "t3": "Patented Venturi tube",
+        "t4": "Type 1 (Disposable)",
+        "t5": "Type 2 (Disposable)",
+        "t6": "Type 2 (Disposable)"
+      },
+      "design": {
+        "label": "Gun Head Design",
+        "t1": "Fixed",
+        "t2": "Fixed",
+        "t3": "Fixed",
+        "t4": "Pin gasket",
+        "t5": "Pin gasket",
+        "t6": "Magnetic (Disposable)"
+      },
+      "output": {
+        "label": "Single Output",
+        "t1": "3μL",
+        "t2": "3μL",
+        "t3": "3μL",
+        "t4": "1 μL",
+        "t5": "0.6 μL",
+        "t6": "0.1 μL"
+      }
+    },
+    "carouselLabels": {
+      "t3": "T3 Generation",
+      "t4": "T4 Generation",
+      "t5": "T5 Generation",
+      "t6": "T6 Generation"
+    },
+    "timelineHeaders": {
+      "gun": "Gun System",
+      "gen": "Generation",
+      "control": "Control System"
+    },
+    "timeline": {
+      "t1t3": {
+        "year": "2005 ~ 2008",
+        "noGunData": "(Early R&D, no gun data available)",
+        "controlSpecs": [
+          "Weight 80 kg",
+          "Floor-standing",
+          "With compressor",
+          "Max 1 shot/sec"
+        ]
+      },
+      "t4": {
+        "year": "2010",
+        "gunTitle": "Stepper Motor Drug Delivery System",
+        "gunIssue": "Issue: Inaccurate dosing (piston resistance causes unstable delivery)",
+        "gunSpecs": [
+          "Drug loading system (syringe)",
+          "Type 1 pressurized atomizer (disposable)",
+          "Stepper motor",
+          "Output 1 μL"
+        ],
+        "controlSpecs": [
+          "Weight 5 kg",
+          "Desktop",
+          "Max 2 shots/sec"
+        ]
+      },
+      "t5": {
+        "year": "2016",
+        "gunSpecs": [
+          "Drug loading system (ampoule)",
+          "Type 2 pressurized atomizer (disposable)",
+          "Smaller gun head than T6",
+          "Output 0.6 μL"
+        ],
+        "controlSpecs": [
+          "Weight 950 g",
+          "Handheld",
+          "3-level speed indicator",
+          "Max 6 shots/sec"
+        ]
+      },
+      "t6": {
+        "year": "2025",
+        "gunSpecs": [
+          "Drug loading system (ampoule)",
+          "Type 2 pressurized atomizer (disposable)",
+          "Magnetic gun head (disposable)",
+          "Output 0.1 μL"
+        ],
+        "controlSpecs": [
+          "Weight 760 g",
+          "Handheld",
+          "LED screen",
+          "Max 10 shots/sec"
+        ]
+      }
+    },
+    "patents": {
+      "title": "Patents List",
+      "items": [
+        {
+          "title": "Combined Venturi Nebulizer Device Capable of Carrying Liquid-Phase Substances",
+          "country": "Taiwan",
+          "type": "Utility Model",
+          "number": "M381463",
+          "year": ""
+        },
+        {
+          "title": "Drug Delivery Device",
+          "country": "Taiwan",
+          "type": "Design",
+          "number": "D145553",
+          "year": ""
+        },
+        {
+          "title": "Drug Delivery Device",
+          "country": "Taiwan",
+          "type": "Invention",
+          "number": "I400103",
+          "year": ""
+        },
+        {
+          "title": "Drug Delivery Device",
+          "country": "China",
+          "type": "Invention",
+          "number": "CN102133444B",
+          "year": ""
+        },
+        {
+          "title": "Drug Delivery Device",
+          "country": "Taiwan",
+          "type": "Invention",
+          "number": "I532513",
+          "year": ""
+        },
+        {
+          "title": "Drug Pressuring and Delivering System with Internal Quantitative Pusher",
+          "country": "Taiwan",
+          "type": "Invention",
+          "number": "I417120",
+          "year": ""
+        },
+        {
+          "title": "Drug Pressuring and Delivering System with Internal Quantitative Pusher",
+          "country": "USA",
+          "type": "Invention",
+          "number": "US 8,317,740 B1",
+          "year": ""
+        },
+        {
+          "title": "Needleless Drug-Injecting System and Method Thereof",
+          "country": "Taiwan",
+          "type": "Invention",
+          "number": "I532511",
+          "year": ""
+        },
+        {
+          "title": "Needleless Drug-Injecting System and Method Thereof",
+          "country": "China",
+          "type": "Invention",
+          "number": "CN104368067B",
+          "year": ""
+        },
+        {
+          "title": "Needleless Drug-Injecting System and Method Thereof",
+          "country": "USA",
+          "type": "Invention",
+          "number": "US9,457,151",
+          "year": ""
+        },
+        {
+          "title": "Needleless Drug-Injecting System and Method Thereof",
+          "country": "EU",
+          "type": "Invention",
+          "number": "EP2837395",
+          "year": ""
+        },
+        {
+          "title": "Needleless Drug-Injecting System and Method Thereof",
+          "country": "Japan",
+          "type": "Invention",
+          "number": "5689158",
+          "year": ""
+        },
+        {
+          "title": "Improved Fixed-Dose Pressurized Atomization Device",
+          "country": "Taiwan",
+          "type": "Utility Model",
+          "number": "M539954",
+          "year": ""
+        },
+        {
+          "title": "Improved Fixed-Dose Pressurized Atomization Device",
+          "country": "China",
+          "type": "Utility Model",
+          "number": "CN206587243U",
+          "year": ""
+        },
+        {
+          "title": "Improved Fixed-Dose Pressurized Atomization Device",
+          "country": "Japan",
+          "type": "Utility Model",
+          "number": "JP3208232U",
+          "year": ""
+        },
+        {
+          "title": "Improved Needleless Injection Device",
+          "country": "Taiwan",
+          "type": "Invention",
+          "number": "I670096",
+          "year": ""
+        },
+        {
+          "title": "Improved Needleless Injection Device",
+          "country": "Taiwan",
+          "type": "Invention",
+          "number": "I735246",
+          "year": ""
+        },
+        {
+          "title": "Improved Needleless Injection Device",
+          "country": "Taiwan",
+          "type": "Utility Model",
+          "number": "M611538",
+          "year": ""
+        },
+        {
+          "title": "Improved Needleless Injection Device",
+          "country": "China",
+          "type": "Utility Model",
+          "number": "CN214911873U",
+          "year": ""
+        }
+      ]
+    }
   },
   "treatment": {
     "subtitle": "Clinical Cases",
     "title": "Clinical Cases",
-    "desc": "Witness the real changes with AeroJet",
+    "desc": "Witness the real changes with AuJet",
     "before": "Before",
-    "after": "After"
+    "after": "After",
+    "patientAge": "Patient Age",
+    "sessions": "Sessions",
+    "duration": "Duration",
+    "cases": [
+      {
+        "id": 1,
+        "problem": "Static Wrinkles",
+        "age": "45 yrs",
+        "sessions": "5 sessions",
+        "duration": "50min",
+        "startTime": "2023/10/01",
+        "endTime": "2023/12/15"
+      },
+      {
+        "id": 2,
+        "problem": "Acne",
+        "age": "28 yrs",
+        "sessions": "3 sessions",
+        "duration": "50min",
+        "startTime": "2023/08/12",
+        "endTime": "2023/10/20"
+      },
+      {
+        "id": 3,
+        "problem": "Sun Spots",
+        "age": "35 yrs",
+        "sessions": "5 sessions",
+        "duration": "50min",
+        "startTime": "2023/09/05",
+        "endTime": "2023/11/10"
+      },
+      {
+        "id": 4,
+        "problem": "Cheek Hollowing & Collagen Loss",
+        "age": "52 yrs",
+        "sessions": "4 sessions",
+        "duration": "45min",
+        "startTime": "2023/07/20",
+        "endTime": "2023/10/05"
+      },
+      {
+        "id": 5,
+        "problem": "Lipoma",
+        "age": "32 yrs",
+        "sessions": "6 sessions",
+        "duration": "60min",
+        "startTime": "2023/06/15",
+        "endTime": "2023/11/30"
+      },
+      {
+        "id": 6,
+        "problem": "Scalp Follicle Atrophy & Hair Loss",
+        "age": "40 yrs",
+        "sessions": "8 sessions",
+        "duration": "40min",
+        "startTime": "2023/05/10",
+        "endTime": "2024/01/15"
+      },
+      {
+        "id": 7,
+        "problem": "Eye Bags",
+        "age": "60 yrs",
+        "sessions": "3 sessions",
+        "duration": "45min",
+        "startTime": "2023/11/01",
+        "endTime": "2024/02/10"
+      }
+    ]
   },
   "about": {
     "subtitle": "About GNT",
     "title": "About GNT",
-    "desc": "GNT is dedicated to the research and development of nanotechnology and biomedical materials, leading the new era of non-invasive medical aesthetics and drug delivery with breakthrough patented technologies. We believe that technological progress should bring safer, more effective, and painless treatment experiences.",
+    "desc": "GNT is dedicated to delivery devices, high-purity vacuum-evaporated precious metal biomedical materials\nleading the new era of non-invasive aesthetics with breakthrough patented technologies\nwith over 20 years of proven experience\nbringing safer, more effective, and more scientific treatment experiences.",
     "products": {
-      "p1": { "title": "Aesthetic Drug Delivery Device", "desc": "Combining fluid dynamics and precision engineering to provide non-invasive, painless, and efficient active ingredient delivery solutions." },
-      "p2": { "title": "Nano Metal Craft", "desc": "Specializing in precious metal materials like nano-gold, applied to biomedical sensing and drug carriers to improve biocompatibility." },
-      "p3": { "title": "Gold Leaf Wine", "desc": "Infusing high-purity edible gold leaf into top-quality liquor, showcasing ultimate luxury and unique flavor." },
-      "p4": { "title": "Gold Traditional Chinese Medicine", "desc": "Combining traditional Chinese medicine pharmacology with modern nano-gold technology to enhance the activity and absorption rate of medicinal materials." },
-      "p5": { "title": "Skincare Development", "desc": "Developing exclusive active ingredient formulas, including high-concentration hyaluronic acid and exosomes, to maximize skincare effects." },
-      "p6": { "title": "Medical Devices", "desc": "Independently developing high-end medical equipment, obtaining multi-national patents and certifications to ensure clinical safety." }
+      "p1": {
+        "title": "Drug / Essence Delivery Device",
+        "desc": "Combining fluid dynamics and precision engineering to provide non-invasive, painless, and efficient active ingredient delivery solutions."
+      },
+      "p2": {
+        "title": "Evaporated Gold & Silver Craft",
+        "desc": "Specializing in evaporated metal materials, applied to food, biotech and pharmaceutical development."
+      },
+      "p3": {
+        "title": "Gold Leaf Wine",
+        "desc": "Infusing evaporated edible gold leaf into premium liquor, showcasing ultimate luxury and unique flavor."
+      }
     }
   },
   "faq": {
     "subtitle": "FAQ",
-    "title": "Answering Your Doubts",
+    "title": "Answering Your Questions",
     "questions": [
       {
-        "q": "Is the AeroJet treatment painful?",
-        "a": "Completely painless and non-invasive. AeroJet uses pneumatic and micron-level atomization technology to instantly penetrate the stratum corneum at 405m/s. Patients will only feel a gentle airflow and micro-shockwave massage."
+        "q": "Is the AuJet treatment painful?",
+        "a": "Completely painless and non-invasive. Since it uses air contact, patients only feel a gentle airflow and micro-shockwave massage."
       },
       {
         "q": "How long is the recovery period after treatment?",
-        "a": "Zero recovery period. No open wounds are created, and normal daily routine and makeup can be resumed immediately after treatment."
+        "a": "Zero recovery period. No open wounds are created; simply moisturize after the session."
       },
       {
         "q": "What is the recommended treatment frequency?",
-        "a": "Depends on skin condition. Generally recommended once every 2-4 weeks initially, and once every 2-3 months for maintenance after 3-5 consecutive treatments."
+        "a": "Generally recommended once a week initially, then once every 2-3 months for maintenance after results stabilize."
       },
       {
-        "q": "What active ingredients can AeroJet be combined with?",
-        "a": "Extremely extensive. Including high-concentration hyaluronic acid, various growth factors, exosomes, Vitamin C, etc. Since it is physical delivery, it does not destroy ingredient activity."
+        "q": "What active ingredients can AuJet be combined with?",
+        "a": "Extremely extensive. Including small-molecule hyaluronic acid, growth factors, exosomes, and various liquid cosmetics. Since it's physical delivery, it doesn't destroy ingredient activity. Any non-precipitating solution can be used."
+      },
+      {
+        "q": "Can it be used with other beauty devices?",
+        "a": "Absolutely. AuJet only performs physical penetration of ingredients, no need to worry about other effects."
+      },
+      {
+        "q": "What consumables are needed?",
+        "a": "Ingredient ampoules, Venturi tubes, and hygienic head covers. To prevent cross-contamination, these parts should be disposed of after use."
+      },
+      {
+        "q": "How long does a single treatment take?",
+        "a": "Depending on the treatment, approximately 25-40 minutes per session."
+      },
+      {
+        "q": "Which areas cannot be treated?",
+        "a": "Fragile mucous membranes and surrounding areas (eyes/ears), open wounds, superficial blood vessels, and neuropathy."
+      },
+      {
+        "q": "Can regular beauticians use it?",
+        "a": "AuJet T6 is the latest model designed for aesthetic use. We continue the T4 generation medical device technology, delivering the highest specifications for skin and follicle penetration in the safest, most portable design."
       }
     ]
   },
   "footer": {
-    "contact": "Contact Us",
-    "address": "No. xxx, Ruiguang Rd., Neihu Dist., Taipei City",
-    "phone": "02-1234-5678",
-    "email": "info@gnt.com.tw",
-    "copyright": "© 2024 GNT Industry Co., Ltd. All rights reserved."
+    "ctaTitle": "Ready to Introduce AuJet.T6",
+    "ctaHighlight": "Ultimate Non-invasive Drug Delivery",
+    "ctaDesc": "Enhance your competitiveness and provide patients with a revolutionary painless, efficient, zero-downtime treatment experience.",
+    "ctaBtn": "Book a Demo",
+    "copyright": "© 2026 GNT Chyng Hwang. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "gasEquipment": {
+    "subtitle": "Gas Equipment",
+    "title": "Gas Equipment and Usage Guide",
+    "description": "Choose between high-pressure cylinders and air compressors based on treatment needs, then match suitable gases for optimal outcomes.",
+    "sourceComparisonsTitle": "Gas Source Comparison",
+    "cylinderGasTypesTitle": "Gas Types for High-Pressure Cylinders",
+    "usageLabel": "Usage",
+    "advantagesLabel": "Advantages",
+    "limitationsLabel": "Considerations",
+    "characteristicsLabel": "Characteristics",
+    "suitableForLabel": "Suitable For",
+    "sourceComparisons": [
+      {
+        "sourceName": "高壓鋼瓶",
+        "requirementText": "一次療程 (5000發)\n約需 160 ml 的氣體\n可使用 CO2、N2、O2 或常見惰性氣體",
+        "usageScenario": "攜帶式",
+        "advantages": [
+          "攜帶方便",
+          "氣體乾淨、氣壓充足"
+        ],
+        "limitations": [
+          "氣體耗盡時需做氣體充填",
+          "須注意高溫、震動、固定"
+        ]
+      },
+      {
+        "sourceName": "空氣壓縮機",
+        "requirementText": "馬達：350W\n最大壓力：>100psi (7 kgf/cm2)\n出氣量：9 L/min\n容量：3L",
+        "usageScenario": "定點式",
+        "advantages": [
+          "可定點施打",
+          "不會凍結"
+        ],
+        "limitations": [
+          "運作時產生噪音",
+          "會受空氣品質影響，建議搭配 HEPA 濾網過濾空氣"
+        ]
+      }
+    ],
+    "cylinderGasTypes": [
+      {
+        "gasName": "二氧化碳 (CO2)",
+        "characteristics": [
+          "促進微循環",
+          "血管擴張",
+          "血管、膠原蛋白生成"
+        ],
+        "suitableFor": [
+          "黑眼圈、妊娠紋",
+          "皮膚鬆弛、橘皮組織"
+        ]
+      },
+      {
+        "gasName": "氧氣 (O2)",
+        "characteristics": [
+          "厭氧菌毒性",
+          "細胞活性提高"
+        ],
+        "suitableFor": [
+          "痤瘡(痘痘)",
+          "暗沉缺氧肌",
+          "術後修復"
+        ]
+      },
+      {
+        "gasName": "氮氣 (N2)",
+        "characteristics": [
+          "安全"
+        ],
+        "suitableFor": [
+          "皆可"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "subtitle": "聯絡資訊",
+    "title": "京華堂聯絡資訊",
+    "companyInfoTitle": "公司資訊",
+    "lineSupportTitle": "LINE 客服",
+    "qrPlaceholderTitle": "QRCode 預留區",
+    "qrPlaceholderDesc": "此區塊預留放置 LINE 客服 QRCode\n後續可直接替換為正式圖檔。",
+    "details": {
+      "company": {
+        "label": "公司名稱",
+        "value": "京華堂實業股份有限公司\nGoldNanoTech. Inc"
+      },
+      "address": {
+        "label": "地址",
+        "value": "114-91\n台北市內湖區瑞光路258巷52號1樓\nNo.52, Lane 258, Jui-Kuang Road, Taipei 114, Taiwan"
+      },
+      "phone": {
+        "label": "電話",
+        "value": "886-2-2658-1622"
+      },
+      "taxId": {
+        "label": "統一編號",
+        "value": "84478111"
+      },
+      "fax": {
+        "label": "傳真",
+        "value": "886-2-2658-1957"
+      },
+      "email": {
+        "label": "郵件",
+        "value": "info@gnt.com.tw"
+      },
+      "hours": {
+        "label": "營業時間",
+        "value": "9:00~18:00"
+      }
+    }
   }
 }

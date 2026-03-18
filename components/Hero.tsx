@@ -2,35 +2,28 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowRight, PlayCircle } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 import { ASSETS } from '@/config/assets';
 
-const slides = [
-  {
-    image: ASSETS.hero.skin,
-    text: '老化/皮膚彈性',
-  },
-  {
-    image: ASSETS.hero.smile,
-    text: '痘痘/問題皮膚方案',
-  },
-  {
-    image: ASSETS.hero.hair,
-    text: '生髮/有效導入',
-  },
-];
-
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const t = useTranslations('hero');
+
+  const slides = [
+    { image: ASSETS.hero.skin, text: t('slides.skin') },
+    { image: ASSETS.hero.smile, text: t('slides.smile') },
+    { image: ASSETS.hero.hair, text: t('slides.hair') },
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [slides.length]);
 
   return (
     <section className="relative w-full h-screen min-h-[700px] flex items-center overflow-hidden bg-slate-50">
@@ -95,20 +88,16 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="max-w-2xl text-left"
         >
-
-          
           <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-8 tracking-tight leading-tight">
-            AeroJet<br />
+            AuJet<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              無創藥物導入<br />肌膚再生的新紀元
+              {t('title1')}<br />{t('title2')}
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-12 leading-relaxed font-light">
-            AeroJet 採用專利氣動力技術<br />
-            將活性成分霧化為微米級液滴<br />
-            以超音速直達真皮層<br />
-            <strong className="font-semibold text-gray-900 block mt-2">無創、高效、零恢復期</strong>
+            {t('desc')}<br />
+            <strong className="font-semibold text-gray-900 block mt-2">{t('highlight')}</strong>
           </p>
           
           <motion.div 
@@ -118,7 +107,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6"
           >
             <button className="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-600/30 flex items-center justify-center group">
-              立即體驗
+              {t('btn1')}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
