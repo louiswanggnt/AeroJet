@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import { ASSETS } from '@/config/assets';
 
 const productKeys = ['p1', 'p2', 'p3'] as const;
-const productImages = [ASSETS.about.products.t6, ASSETS.about.products.nanogold, ASSETS.about.products.wine];
+const productImages = [ASSETS.about.products.t6, ASSETS.about.products.nanogold, ASSETS.about.products.bed];
 
 export default function About() {
   const t = useTranslations('about');
@@ -27,7 +27,7 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto relative z-10 w-full">
         <div className="text-center mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -35,7 +35,7 @@ export default function About() {
           >
             {t('subtitle')}
           </motion.h2>
-          <motion.h3 
+          <motion.h3
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -77,9 +77,9 @@ export default function About() {
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
-              
+
               <div className="absolute inset-0 bg-white/70 backdrop-blur-[2px] transition-colors duration-300 group-hover:bg-white/80" />
-              
+
               <div className="absolute inset-0 p-8 flex flex-col justify-center items-center text-center z-10">
                 <h4 className="text-xl font-bold text-gray-900 mb-3">{t(`products.${key}.title`)}</h4>
                 <p className="text-gray-700 text-sm leading-relaxed font-medium">

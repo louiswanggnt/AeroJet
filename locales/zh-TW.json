@@ -100,16 +100,51 @@
     },
     "comparison": {
       "title": "與其他市售商品的對照",
-      "headers": ["AuJet T6", "他牌"],
+      "headers": [
+        "AuJet T6",
+        "他牌"
+      ],
       "rows": {
-        "gasSource": { "label": "氣體源", "t6": "多種氣體源\n二氧化碳、氮氣、氧氣\n高壓鋼瓶、空壓機", "other": "空壓機" },
-        "speed": { "label": "藥物速度", "t6": "405 m/s", "other": "150~250 m/s" },
-        "brand": { "label": "品牌價值", "t6": "多國專利+國家認證\n20年以上專利升級", "other": "不詳" },
-        "mode": { "label": "發射模式", "t6": "毫秒脈衝式 (滲透、震波)", "other": "連續噴灑" },
-        "safety": { "label": "安全性", "t6": "多項研究驗證", "other": "不詳" },
-        "system": { "label": "體系", "t6": "專業培訓課程\n創業輔導", "other": "操作教學" },
-        "marketing": { "label": "行銷通路", "t6": "國家型科學研究專案", "other": "不詳" },
-        "effect": { "label": "實際效果", "t6": "超過20年實證", "other": "不詳" }
+        "gasSource": {
+          "label": "氣體源",
+          "t6": "多種氣體源\n二氧化碳、氮氣、氧氣\n高壓鋼瓶、空壓機",
+          "other": "空壓機"
+        },
+        "speed": {
+          "label": "藥物速度",
+          "t6": "405 m/s",
+          "other": "150~250 m/s"
+        },
+        "brand": {
+          "label": "品牌價值",
+          "t6": "多國專利+國家認證\n20年以上專利升級",
+          "other": "不詳"
+        },
+        "mode": {
+          "label": "發射模式",
+          "t6": "毫秒脈衝式 (滲透、震波)",
+          "other": "連續噴灑"
+        },
+        "safety": {
+          "label": "安全性",
+          "t6": "多項研究驗證",
+          "other": "不詳"
+        },
+        "system": {
+          "label": "體系",
+          "t6": "專業培訓課程\n創業輔導",
+          "other": "操作教學"
+        },
+        "marketing": {
+          "label": "行銷通路",
+          "t6": "國家型科學研究專案",
+          "other": "不詳"
+        },
+        "effect": {
+          "label": "實際效果",
+          "t6": "超過20年實證",
+          "other": "不詳"
+        }
       }
     },
     "trials": {
@@ -163,13 +198,69 @@
       "t6": "T6"
     },
     "specRows": {
-      "type": { "label": "型態", "t1": "落地型", "t2": "落地型", "t3": "落地型 (含空壓機)", "t4": "桌上型", "t5": "手攜型", "t6": "手攜型 (LED螢幕)" },
-      "weight": { "label": "重量", "t1": "~80kg", "t2": "~70kg", "t3": "60 kg", "t4": "5 kg", "t5": "1 kg", "t6": "0.76 kg" },
-      "speed": { "label": "給藥速度", "t1": "1發/秒", "t2": "1發/秒", "t3": "2發/秒", "t4": "2發/秒", "t5": "6發/秒", "t6": "10發/秒" },
-      "load": { "label": "藥物裝載", "t1": "針筒", "t2": "針筒", "t3": "針筒", "t4": "針筒", "t5": "安瓶", "t6": "安瓶" },
-      "atomizer": { "label": "霧化器", "t1": "專利文式管", "t2": "專利文式管", "t3": "專利文式管", "t4": "Type 1 (拋棄式)", "t5": "Type 2 (拋棄式)", "t6": "Type 2 (拋棄式)" },
-      "design": { "label": "槍頭設計", "t1": "固定式", "t2": "固定式", "t3": "固定式", "t4": "插銷墊片", "t5": "插銷墊片", "t6": "磁吸式 (拋棄式)" },
-      "output": { "label": "單次輸出量", "t1": "3μL", "t2": "3μL", "t3": "3μL", "t4": "1 μL", "t5": "0.6 μL", "t6": "0.1 μL" }
+      "type": {
+        "label": "型態",
+        "t1": "落地型",
+        "t2": "落地型",
+        "t3": "落地型 (含空壓機)",
+        "t4": "桌上型",
+        "t5": "手攜型",
+        "t6": "手攜型 (LED螢幕)"
+      },
+      "weight": {
+        "label": "重量",
+        "t1": "~80kg",
+        "t2": "~70kg",
+        "t3": "60 kg",
+        "t4": "5 kg",
+        "t5": "1 kg",
+        "t6": "0.76 kg"
+      },
+      "speed": {
+        "label": "給藥速度",
+        "t1": "1發/秒",
+        "t2": "1發/秒",
+        "t3": "2發/秒",
+        "t4": "2發/秒",
+        "t5": "6發/秒",
+        "t6": "10發/秒"
+      },
+      "load": {
+        "label": "藥物裝載",
+        "t1": "針筒",
+        "t2": "針筒",
+        "t3": "針筒",
+        "t4": "針筒",
+        "t5": "安瓶",
+        "t6": "安瓶"
+      },
+      "atomizer": {
+        "label": "霧化器",
+        "t1": "專利文式管",
+        "t2": "專利文式管",
+        "t3": "專利文式管",
+        "t4": "Type 1 (拋棄式)",
+        "t5": "Type 2 (拋棄式)",
+        "t6": "Type 2 (拋棄式)"
+      },
+      "design": {
+        "label": "槍頭設計",
+        "t1": "固定式",
+        "t2": "固定式",
+        "t3": "固定式",
+        "t4": "插銷墊片",
+        "t5": "插銷墊片",
+        "t6": "磁吸式 (拋棄式)"
+      },
+      "output": {
+        "label": "單次輸出量",
+        "t1": "3μL",
+        "t2": "3μL",
+        "t3": "3μL",
+        "t4": "1 μL",
+        "t5": "0.6 μL",
+        "t6": "0.1 μL"
+      }
     },
     "carouselLabels": {
       "t3": "T3 世代",
@@ -186,54 +277,202 @@
       "t1t3": {
         "year": "2005 ~ 2008",
         "noGunData": "（研發初期，無對應槍體資料）",
-        "controlSpecs": ["重量 80 kg", "落地型", "含空壓機", "每秒最多 1 發"]
+        "controlSpecs": [
+          "重量 80 kg",
+          "落地型",
+          "含空壓機",
+          "每秒最多 1 發"
+        ]
       },
       "t4": {
         "year": "2010",
         "gunTitle": "步進馬達推動給藥系統",
         "gunIssue": "缺：定量不精準(活塞阻力造成給藥劑量不穩定)",
-        "gunSpecs": ["藥物裝載系統(針筒)", "type 1 加壓霧化器(拋棄式)", "步進馬達", "輸出液體 1 μL"],
-        "controlSpecs": ["重量 5 kg", "桌上型", "每秒最多 2 發"]
+        "gunSpecs": [
+          "藥物裝載系統(針筒)",
+          "type 1 加壓霧化器(拋棄式)",
+          "步進馬達",
+          "輸出液體 1 μL"
+        ],
+        "controlSpecs": [
+          "重量 5 kg",
+          "桌上型",
+          "每秒最多 2 發"
+        ]
       },
       "t5": {
         "year": "2016",
-        "gunSpecs": ["藥物裝載系統(安瓶)", "type 2 加壓霧化器(拋棄式)", "槍頭較T6小", "輸出液體 0.6 μL"],
-        "controlSpecs": ["重量 950 g", "手攜型", "給藥速度分三種燈號", "每秒最多 6 發"]
+        "gunSpecs": [
+          "藥物裝載系統(安瓶)",
+          "type 2 加壓霧化器(拋棄式)",
+          "槍頭較T6小",
+          "輸出液體 0.6 μL"
+        ],
+        "controlSpecs": [
+          "重量 950 g",
+          "手攜型",
+          "給藥速度分三種燈號",
+          "每秒最多 6 發"
+        ]
       },
       "t6": {
         "year": "2025",
-        "gunSpecs": ["藥物裝載系統(安瓶)", "type 2 加壓霧化器(拋棄式)", "磁吸式槍頭(可拋棄式)", "輸出液體 0.1 μL"],
-        "controlSpecs": ["重量 760 g", "手攜型", "LED螢幕", "每秒最多 10 發"]
+        "gunSpecs": [
+          "藥物裝載系統(安瓶)",
+          "type 2 加壓霧化器(拋棄式)",
+          "磁吸式槍頭(可拋棄式)",
+          "輸出液體 0.1 μL"
+        ],
+        "controlSpecs": [
+          "重量 760 g",
+          "手攜型",
+          "LED螢幕",
+          "每秒最多 10 發"
+        ]
       }
     },
     "patents": {
       "title": "多國專利一覽",
       "items": [
-        { "title": "可承載液相物質之組合式文氏管噴霧器裝置", "country": "臺灣", "type": "新型", "number": "M381463", "year": "" },
-        { "title": "藥物輸送裝置", "country": "臺灣", "type": "設計", "number": "D145553", "year": "" },
-        { "title": "藥物輸送裝置", "country": "臺灣", "type": "發明", "number": "I400103", "year": "" },
-        { "title": "藥物輸送裝置", "country": "中國", "type": "發明", "number": "CN102133444B", "year": "" },
-        { "title": "藥物輸送裝置", "country": "臺灣", "type": "發明", "number": "I532513", "year": "" },
-        { "title": "一種內置定量推進器之藥物加壓輸送裝置", "country": "臺灣", "type": "發明", "number": "I417120", "year": "" },
-        { "title": "一種內置定量推進器之藥物加壓輸送裝置", "country": "美國", "type": "發明", "number": "US 8,317,740 B1", "year": "" },
-        { "title": "無針型注射系統及其注射方法", "country": "臺灣", "type": "發明", "number": "I532511", "year": "" },
-        { "title": "無針型注射系統及其注射方法", "country": "中國", "type": "發明", "number": "CN104368067B", "year": "" },
-        { "title": "無針型注射系統及其注射方法", "country": "美國", "type": "發明", "number": "US9,457,151", "year": "" },
-        { "title": "無針型注射系統及其注射方法", "country": "歐盟", "type": "發明", "number": "EP2837395", "year": "" },
-        { "title": "無針型注射系統及其注射方法", "country": "日本", "type": "發明", "number": "5689158", "year": "" },
-        { "title": "改良式定量霧化加壓裝置", "country": "臺灣", "type": "新型", "number": "M539954", "year": "" },
-        { "title": "改良式定量霧化加壓裝置", "country": "中國", "type": "新型", "number": "CN206587243U", "year": "" },
-        { "title": "改良式定量霧化加壓裝置", "country": "日本", "type": "新型", "number": "JP3208232U", "year": "" },
-        { "title": "改良之無針注射裝置", "country": "臺灣", "type": "發明", "number": "I670096", "year": "" },
-        { "title": "改良之無針注射裝置", "country": "臺灣", "type": "發明", "number": "I735246", "year": "" },
-        { "title": "改良之無針注射裝置", "country": "臺灣", "type": "新型", "number": "M611538", "year": "" },
-        { "title": "改良之無針注射裝置", "country": "中國", "type": "新型", "number": "CN214911873U", "year": "" }
+        {
+          "title": "可承載液相物質之組合式文氏管噴霧器裝置",
+          "country": "臺灣",
+          "type": "新型",
+          "number": "M381463",
+          "year": ""
+        },
+        {
+          "title": "藥物輸送裝置",
+          "country": "臺灣",
+          "type": "設計",
+          "number": "D145553",
+          "year": ""
+        },
+        {
+          "title": "藥物輸送裝置",
+          "country": "臺灣",
+          "type": "發明",
+          "number": "I400103",
+          "year": ""
+        },
+        {
+          "title": "藥物輸送裝置",
+          "country": "中國",
+          "type": "發明",
+          "number": "CN102133444B",
+          "year": ""
+        },
+        {
+          "title": "藥物輸送裝置",
+          "country": "臺灣",
+          "type": "發明",
+          "number": "I532513",
+          "year": ""
+        },
+        {
+          "title": "一種內置定量推進器之藥物加壓輸送裝置",
+          "country": "臺灣",
+          "type": "發明",
+          "number": "I417120",
+          "year": ""
+        },
+        {
+          "title": "一種內置定量推進器之藥物加壓輸送裝置",
+          "country": "美國",
+          "type": "發明",
+          "number": "US 8,317,740 B1",
+          "year": ""
+        },
+        {
+          "title": "無針型注射系統及其注射方法",
+          "country": "臺灣",
+          "type": "發明",
+          "number": "I532511",
+          "year": ""
+        },
+        {
+          "title": "無針型注射系統及其注射方法",
+          "country": "中國",
+          "type": "發明",
+          "number": "CN104368067B",
+          "year": ""
+        },
+        {
+          "title": "無針型注射系統及其注射方法",
+          "country": "美國",
+          "type": "發明",
+          "number": "US9,457,151",
+          "year": ""
+        },
+        {
+          "title": "無針型注射系統及其注射方法",
+          "country": "歐盟",
+          "type": "發明",
+          "number": "EP2837395",
+          "year": ""
+        },
+        {
+          "title": "無針型注射系統及其注射方法",
+          "country": "日本",
+          "type": "發明",
+          "number": "5689158",
+          "year": ""
+        },
+        {
+          "title": "改良式定量霧化加壓裝置",
+          "country": "臺灣",
+          "type": "新型",
+          "number": "M539954",
+          "year": ""
+        },
+        {
+          "title": "改良式定量霧化加壓裝置",
+          "country": "中國",
+          "type": "新型",
+          "number": "CN206587243U",
+          "year": ""
+        },
+        {
+          "title": "改良式定量霧化加壓裝置",
+          "country": "日本",
+          "type": "新型",
+          "number": "JP3208232U",
+          "year": ""
+        },
+        {
+          "title": "改良之無針注射裝置",
+          "country": "臺灣",
+          "type": "發明",
+          "number": "I670096",
+          "year": ""
+        },
+        {
+          "title": "改良之無針注射裝置",
+          "country": "臺灣",
+          "type": "發明",
+          "number": "I735246",
+          "year": ""
+        },
+        {
+          "title": "改良之無針注射裝置",
+          "country": "臺灣",
+          "type": "新型",
+          "number": "M611538",
+          "year": ""
+        },
+        {
+          "title": "改良之無針注射裝置",
+          "country": "中國",
+          "type": "新型",
+          "number": "CN214911873U",
+          "year": ""
+        }
       ]
     }
   },
   "treatment": {
-    "subtitle": "Clinical Cases",
-    "title": "臨床實例",
+    "subtitle": "Cases",
+    "title": "個案研討",
     "desc": "見證 AuJet 的真實改變",
     "before": "Before",
     "after": "After",
@@ -241,13 +480,69 @@
     "sessions": "課程 次數",
     "duration": "每次時間",
     "cases": [
-      { "id": 1, "problem": "靜態紋", "age": "48歲", "sessions": "5次", "duration": "30min", "startTime": "12/26", "endTime": "1/2" },
-      { "id": 2, "problem": "暗瘡(痘痘)", "age": "32歲", "sessions": "4次", "duration": "30min", "startTime": "2025/12/21", "endTime": "2026/01/18" },
-      { "id": 3, "problem": "臉部拉提", "age": "35歲", "sessions": "1次", "duration": "30min", "startTime": "09/05", "endTime": "09/05" },
-      { "id": 4, "problem": "細紋", "age": "42歲", "sessions": "1次", "duration": "45min", "startTime": "07/20", "endTime": "7/20" },
-      { "id": 5, "problem": "先天性皮膚炎", "age": "19歲", "sessions": "2次", "duration": "60min", "startTime": "07/29", "endTime": "08/04" },
-      { "id": 6, "problem": "頭皮毛囊萎縮與落髮", "age": "40歲", "sessions": "4次", "duration": "40min", "startTime": "2023/11/06", "endTime": "2024/12/01" },
-      { "id": 7, "problem": "脂肪瘤", "age": "35歲", "sessions": "1次", "duration": "20min", "startTime": "11/01", "endTime": "11/01" }
+      {
+        "id": 1,
+        "problem": "靜態紋",
+        "age": "48歲",
+        "sessions": "5次",
+        "duration": "30min",
+        "startTime": "12/26",
+        "endTime": "1/2"
+      },
+      {
+        "id": 2,
+        "problem": "暗瘡(痘痘)",
+        "age": "32歲",
+        "sessions": "4次",
+        "duration": "30min",
+        "startTime": "2025/12/21",
+        "endTime": "2026/01/18"
+      },
+      {
+        "id": 3,
+        "problem": "臉部拉提",
+        "age": "35歲",
+        "sessions": "1次",
+        "duration": "30min",
+        "startTime": "09/05",
+        "endTime": "09/05"
+      },
+      {
+        "id": 4,
+        "problem": "細紋",
+        "age": "42歲",
+        "sessions": "1次",
+        "duration": "45min",
+        "startTime": "07/20",
+        "endTime": "7/20"
+      },
+      {
+        "id": 5,
+        "problem": "先天性皮膚炎",
+        "age": "19歲",
+        "sessions": "2次",
+        "duration": "60min",
+        "startTime": "07/29",
+        "endTime": "08/04"
+      },
+      {
+        "id": 6,
+        "problem": "頭皮毛囊萎縮與落髮",
+        "age": "40歲",
+        "sessions": "4次",
+        "duration": "40min",
+        "startTime": "2023/11/06",
+        "endTime": "2024/12/01"
+      },
+      {
+        "id": 7,
+        "problem": "脂肪瘤",
+        "age": "35歲",
+        "sessions": "1次",
+        "duration": "20min",
+        "startTime": "11/01",
+        "endTime": "11/01"
+      }
     ]
   },
   "about": {
@@ -255,15 +550,28 @@
     "title": "關於京華堂",
     "desc": "京華堂 (GNT) 致力於皮膚照料設備、高純度真空汽化貴金屬生醫材料\n以突破性的專利技術引領無創美容的新紀元\n運用20年的實證經驗\n帶來更安全、更有效、更科學的治療體驗。",
     "products": {
-      "p1": { "title": "藥物/美容液導入儀", "desc": "結合流體力學與精密工程，提供無創、無痛的高效活性成分導入解決方案。" },
-      "p2": { "title": "汽化金、汽化銀工藝", "desc": "專研汽化金屬材料，應用於食品、生技與藥物發展。" },
-      "p3": { "title": "黃金酒", "desc": "將汽化食用金箔融入頂級酒液，展現極致奢華與獨特風味。" }
+      "p1": {
+        "title": "藥物/美容液導入儀",
+        "desc": "結合流體力學與精密工程，提供無創、無痛的高效活性成分導入解決方案。"
+      },
+      "p2": {
+        "title": "汽化金、汽化銀工藝",
+        "desc": "專研汽化金屬材料，應用於食品、生技與藥物發展。"
+      },
+      "p3": {
+        "title": "智慧長照床",
+        "desc": "使用汽缸支撐體位全時體位偵測、防治褥創。自動如廁盥洗控制、AI遠端監控。"
+      }
     }
   },
   "faq": {
     "subtitle": "常見問題",
     "title": "解答您的疑惑",
     "questions": [
+      {
+        "q": "AuJet 可以搭配哪些活性成分？",
+        "a": "主要使用汽化金、銀，亦可包含小分子玻尿酸、生長因子、外泌體 、及各式液態化妝品。由於是物理性導入，不會破壞成分活性。只要是無沉澱物之溶液皆可作施打"
+      },
       {
         "q": "使用 AuJet 療程會有痛感嗎？",
         "a": "無痛無創。由於是氣體接觸，患者僅會感受到溫和的氣流與微震波按摩。"
@@ -275,10 +583,6 @@
       {
         "q": "建議的療程頻率為何？",
         "a": "一般建議初期 每週一次，效果進入穩定後，每 2-3 個月進行一次保養。"
-      },
-      {
-        "q": "AuJet 可以搭配哪些活性成分？",
-        "a": "主要使用汽化金、銀，亦可包含小分子玻尿酸、生長因子、外泌體 、及各式液態化妝品。由於是物理性導入，不會破壞成分活性。只要是無沉澱物之溶液皆可作施打"
       },
       {
         "q": "可否配合其他美容儀、導入儀使用？",
@@ -318,21 +622,63 @@
         "sourceName": "高壓鋼瓶",
         "requirementText": "輕巧、簡易、乾淨\n但需要定時充氣。 \n \n一次療程 (5000發)約使用 160 ml 的氣體 \n可選擇 CO2、N2、O2 或常見惰性氣體",
         "usageScenario": "攜帶式",
-        "advantages": ["攜帶方便", "氣體乾淨、氣壓充足"],
-        "limitations": ["氣體耗盡時需做氣體充填", "須注意高溫、震動、固定"]
+        "advantages": [
+          "攜帶方便",
+          "氣體乾淨、氣壓充足"
+        ],
+        "limitations": [
+          "氣體耗盡時需做氣體充填",
+          "須注意高溫、震動、固定"
+        ]
       },
       {
         "sourceName": "空氣壓縮機",
         "requirementText": "較大、初期設定需時間\n不須充氣，自主吸收周圍空氣\n \n馬達：350W\n最大壓力：>100psi (7 kgf/cm2)\n出氣量：9 L/min\n容量：3L",
         "usageScenario": "定點式",
-        "advantages": ["可定點施打", "不會凍結"],
-        "limitations": ["運作時產生噪音", "會受空氣品質影響，建議搭配 HEPA 濾網過濾空氣"]
+        "advantages": [
+          "可定點施打",
+          "不會凍結"
+        ],
+        "limitations": [
+          "運作時產生噪音",
+          "會受空氣品質影響，建議搭配 HEPA 濾網過濾空氣"
+        ]
       }
     ],
     "cylinderGasTypes": [
-      { "gasName": "二氧化碳 (CO2)", "characteristics": ["促進微循環", "血管擴張", "血管、膠原蛋白生成"], "suitableFor": ["黑眼圈、妊娠紋", "皮膚鬆弛、橘皮組織"] },
-      { "gasName": "氧氣 (O2)", "characteristics": ["厭氧菌毒性", "細胞活性提高"], "suitableFor": ["痤瘡(痘痘)", "暗沉缺氧肌", "術後修復"] },
-      { "gasName": "氮氣 (N2)", "characteristics": ["安全"], "suitableFor": ["皆可"] }
+      {
+        "gasName": "二氧化碳 (CO2)",
+        "characteristics": [
+          "促進微循環",
+          "血管擴張",
+          "血管、膠原蛋白生成"
+        ],
+        "suitableFor": [
+          "黑眼圈、妊娠紋",
+          "皮膚鬆弛、橘皮組織"
+        ]
+      },
+      {
+        "gasName": "氧氣 (O2)",
+        "characteristics": [
+          "厭氧菌毒性",
+          "細胞活性提高"
+        ],
+        "suitableFor": [
+          "痤瘡(痘痘)",
+          "暗沉缺氧肌",
+          "術後修復"
+        ]
+      },
+      {
+        "gasName": "氮氣 (N2)",
+        "characteristics": [
+          "安全"
+        ],
+        "suitableFor": [
+          "皆可"
+        ]
+      }
     ]
   },
   "contact": {
@@ -343,13 +689,34 @@
     "qrPlaceholderTitle": "QRCode 預留區",
     "qrPlaceholderDesc": "此區塊預留放置 LINE 客服 QRCode\n後續可直接替換為正式圖檔。",
     "details": {
-      "company": { "label": "公司名稱", "value": "京華堂實業股份有限公司\nGoldNanoTech. Inc" },
-      "address": { "label": "地址", "value": "114-91\n台北市內湖區瑞光路258巷52號1樓\nNo.52, Lane 258, Jui-Kuang Road, Taipei 114, Taiwan" },
-      "phone": { "label": "電話", "value": "886-2-2658-1622" },
-      "taxId": { "label": "統一編號", "value": "84478111" },
-      "fax": { "label": "傳真", "value": "886-2-2658-1957" },
-      "email": { "label": "郵件", "value": "info@gnt.com.tw" },
-      "hours": { "label": "營業時間", "value": "9:00~18:00" }
+      "company": {
+        "label": "公司名稱",
+        "value": "京華堂實業股份有限公司\nGoldNanoTech. Inc"
+      },
+      "address": {
+        "label": "地址",
+        "value": "114-91\n台北市內湖區瑞光路258巷52號1樓\nNo.52, Lane 258, Jui-Kuang Road, Taipei 114, Taiwan"
+      },
+      "phone": {
+        "label": "電話",
+        "value": "886-2-2658-1622"
+      },
+      "taxId": {
+        "label": "統一編號",
+        "value": "84478111"
+      },
+      "fax": {
+        "label": "傳真",
+        "value": "886-2-2658-1957"
+      },
+      "email": {
+        "label": "郵件",
+        "value": "info@gnt.com.tw"
+      },
+      "hours": {
+        "label": "營業時間",
+        "value": "9:00~18:00"
+      }
     }
   },
   "footer": {
