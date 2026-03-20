@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+# 將根路徑導向預設語系（zh-TW）
+[[redirects]]
+  from   = "/"
+  to     = "/zh-TW"
+  status = 302
+
+# 其他路徑找不到時顯示 404 頁面
+[[redirects]]
+  from   = "/*"
+  to     = "/404.html"
+  status = 404
