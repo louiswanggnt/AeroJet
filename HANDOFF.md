@@ -1,6 +1,6 @@
 # AeroJet 專案交接文件
 
-> 最後更新：2026-03-17
+> 最後更新：2026-05-11（自動化投放完成 + 文件結構整改）
 
 ## 1. 專案概覽
 
@@ -13,56 +13,62 @@
 | 樣式 | Tailwind CSS 4 |
 | 動畫 | Framer Motion (`motion` 套件) |
 | 多語系 | next-intl (URL 路由式) |
-| 部署 | Firebase (`output: 'standalone'`) |
+| 部署模式 | 靜態匯出 (`next export` → `out/` → **FTP**) |
+| 生產目標 | 公司舊伺服器 `auvita.tw`（FTP host: `ftp.gntbmd.com:21`） |
+| 預覽 | Netlify (`jovial-manatee-a02a63`) |
+
+**架構決定**：Next.js 為唯一真相（ADR-001）。詳見 [`docs/ARCHITECTURE_DECISION.md`](docs/ARCHITECTURE_DECISION.md)。
 
 ## 2. 目錄結構
 
 ```
 AeroJet/
+├── CLAUDE.md                          ← Claude Code 自動載入入口
+├── HANDOFF.md                         ← 本檔
+├── README.md                          ← AI Studio 啟動指南（簡）
+├── .claude/settings.json              ← Agent 權限 + hooks
+├── .github/workflows/
+│   ├── deploy-on-push.yml             ← push 到 main 自動部署
+│   ├── deploy-daily.yml               ← 每日 00:05 台灣自動切換促銷
+│   └── validate-pr.yml                ← PR 驗證
 ├── app/
-│   ├── layout.tsx                  # 根 layout (passthrough)
-│   ├── globals.css                 # 全域樣式
-│   └── [locale]/                   # next-intl 動態路由
-│       ├── layout.tsx              # 載入 NextIntlClientProvider、metadata、jsonLd
-│       ├── page.tsx                # 首頁 (Hero + Tech + FAQ + Footer)
-│       ├── about/page.tsx          # 關於京華堂
-│       ├── treatment/page.tsx      # 臨床實例
-│       ├── technology/page.tsx     # 技術原理
-│       ├── evolution/page.tsx      # 世代演進
-│       ├── gas-equipment/page.tsx  # 氣體設備
-│       └── contact/page.tsx        # 聯絡資訊
-├── components/
-│   ├── Header.tsx                  # 導覽列 + 語言切換
-│   ├── Hero.tsx                    # 首頁輪播 + CTA
-│   ├── Tech.tsx                    # 技術核心 + 儀器三大功效
-│   ├── FAQ.tsx                     # 常見問題手風琴
-│   ├── Footer.tsx                  # CTA + 版權資訊
-│   ├── About.tsx                   # 關於京華堂 + 產品列表
-│   ├── Treatment.tsx               # 臨床案例卡片
-│   ├── Technology.tsx              # 技術原理長文 + 比較表 + 試驗 + 期刊
-│   ├── EvolutionTimeline.tsx       # 世代演進時間軸 + 規格表 + 專利
-│   ├── GasEquipment.tsx            # 氣體設備比較與適用族群
-│   └── ContactInfo.tsx             # 聯絡資訊與 LINE QR 區塊
-├── config/
-│   └── assets.ts                   # 所有靜態資源路徑集中管理
-├── i18n/
-│   ├── routing.ts                  # 定義支援語系 ['zh-TW','en','ja']
-│   ├── request.ts                  # Server 端載入 locale JSON
-│   └── navigation.ts              # 匯出 Link/useRouter/usePathname 等
-├── locales/
-│   ├── zh-TW.json                  # 繁體中文 (主語系，llms.txt 的資料來源)
-│   ├── en.json                     # 英文
-│   └── ja.json                     # 日文
-├── middleware.ts                   # next-intl locale 偵測 middleware
-├── next.config.ts                  # Next.js config + next-intl plugin
+│   ├── layout.tsx                     # 根 layout (passthrough)
+│   ├── globals.css                    # 全域樣式
+│   └── [locale]/                      # next-intl 動態路由
+│       ├── layout.tsx                 # SEO metadata（含 NEXT_PUBLIC_SITE_URL）
+│       ├── page.tsx                   # 首頁
+│       ├── about/page.tsx             # 關於京華堂
+│       ├── treatment/page.tsx         # 臨床實例
+│       ├── technology/page.tsx        # 技術原理
+│       ├── evolution/page.tsx         # 世代演進
+│       ├── gas-equipment/page.tsx     # 氣體設備
+│       └── contact/page.tsx           # 聯絡資訊
+├── components/                        # 12 個共用元件
+├── data/promotions/
+│   ├── schedule.json                  ← 行銷唯一觸碰點（總排程）
+│   ├── schedule.schema.json           ← JSON Schema 驗證規範
+│   ├── active.json                    ← build-active.mjs 自動產出
+│   └── archive.json                   ← build-active.mjs 自動歸檔
+├── types/promotion.ts                 # 活動消息型別
+├── config/assets.ts                   # 靜態資源路徑集中
+├── i18n/                              # next-intl 設定
+├── locales/{zh-TW,en,ja}.json         # 文字單一真相
+├── middleware.ts                      # next-intl middleware
+├── next.config.ts
 ├── scripts/
-│   └── generate-llms.ts            # 從 zh-TW.json 自動生成 public/llms.txt
+│   ├── generate-llms.ts               # 產出 public/llms.txt
+│   ├── validate-schedule.mjs          ← schema + 業務規則驗證
+│   └── build-active.mjs               ← 按今日切分 active/archive
 ├── public/
-│   ├── llms.txt                    # 供 LLM 閱讀的品牌知識摘要
-│   └── images/                     # 所有靜態圖片
-├── docs/
-│   └── IMAGE_MANAGEMENT_SOP.md     # 圖片管理 SOP
-└── HANDOFF.md                      # 本文件
+│   ├── llms.txt                       # AI/LLM 摘要
+│   └── images/                        # 靜態圖片
+│       └── promotions/{YYYY-MM}/      # 行銷上傳區
+└── docs/
+    ├── AGENT_RULES.md                 ← 老闆 vs 行銷修改規則
+    ├── ARCHITECTURE_DECISION.md       ← ADR 紀錄
+    ├── DEPLOYMENT.md                  ← GitHub Secrets / SFTP 設定
+    ├── MARKETING_GUIDE.md             ← 行銷使用手冊
+    └── IMAGE_MANAGEMENT_SOP.md        ← 圖片管理 SOP
 ```
 
 ## 3. i18n 多語系架構
@@ -142,7 +148,7 @@ function MyComponent() {
 npm run generate:llms
 ```
 
-**更新時機**：每次修改 `locales/zh-TW.json` 內容後，都應執行此指令重新生成。
+**更新時機**：每次修改 `locales/zh-TW.json` 內容後，都應執行此指令重新生成。GitHub Actions 在每次 deploy 前自動執行。
 
 ## 7. 同步更新清單
 
@@ -155,24 +161,137 @@ npm run generate:llms
 | 新增元件 | 文字從 locale 讀取 → 更新本文件 |
 | 調整氣體設備 / 聯絡資訊 | 更新 `gasEquipment` / `contact` namespace → 執行 `npm run generate:llms` |
 | 修改圖片 | 更新 config/assets.ts → 放入 public/images/ |
+| 更新活動消息 | **改 schedule.json** → 跑 `npm run validate:promotions` → 跑 `npm run build:active`（或讓 CI 跑） |
 | 新增語系 | locales/ 新增 JSON → i18n/routing.ts 加語系 |
 
-## 8. npm scripts
+## 8. 活動消息輪播（Promotions）— 自動化投放架構
+
+### 8.1 資料流
+
+```
+schedule.json   ← 行銷唯一觸碰點（含過去/當期/未來所有促銷）
+    │
+    ├── validate-schedule.mjs   ← schema + 業務規則
+    │   ├── 三語系完整性
+    │   ├── 日期格式 YYYY-MM-DD
+    │   ├── startAt < endAt
+    │   ├── id 唯一
+    │   ├── 同期 overlap <= 3
+    │   └── 圖片實際存在於 public/
+    │
+    └── build-active.mjs        ← 按今日（Asia/Taipei）切分
+            ├── active.json     ← startAt <= today <= endAt（最多 3 則）
+            └── archive.json    ← endAt < today（自動加 archivedAt）
+```
+
+**重要**：`active.json` 與 `archive.json` 由 build-active.mjs 自動產出，**手動編輯會被覆蓋**。
+
+### 8.2 資料結構
+
+`data/promotions/schedule.json` 每筆格式：
+
+```json
+{
+  "id": "2026-05-promo-1",
+  "image": "/images/promotions/2026-05/promo-1.jpg",
+  "startAt": "2026-05-01",
+  "endAt":   "2026-05-31",
+  "zh-TW": { "title": "標題", "description": "描述" },
+  "en":    { "title": "Title", "description": "Desc" },
+  "ja":    { "title": "タイトル", "description": "説明" }
+}
+```
+
+- `image`：相對 `public/` 路徑（`/images/promotions/{YYYY-MM}/promo-{1-3}.jpg`）或外部 URL
+- 三語系欄位各含 `title` (≤50 字) 和 `description` (≤200 字)
+- TypeScript 型別定義位於 `types/promotion.ts`
+
+### 8.3 自動化部署觸發
+
+| 觸發 | Workflow | 動作 |
+|-----|---------|------|
+| push 到 main（影響 schedule.json / images 等） | `deploy-on-push.yml` | validate → build:active → build → **FTP push** (ftp.gntbmd.com:21) |
+| 每日台灣 00:05 | `deploy-daily.yml` | build:active（自動跨日切換）→ 若有變動則 build & deploy |
+| PR / 非 main 分支 push | `validate-pr.yml` | validate + build dry-run |
+
+### 8.4 行銷工作流（給 Claude Desktop 用）
+
+詳見 [`docs/MARKETING_GUIDE.md`](docs/MARKETING_GUIDE.md)。簡要：
+
+```
+1. 行銷準備 ~/promotions-inbox/{YYYY-MM}/input.md + promo-1.jpg ~ promo-3.jpg
+2. 對 Claude Desktop 說「處理 YYYY-MM 活動更新」
+3. Claude Desktop 透過 GitHub MCP:
+   - 上傳圖片 → public/images/promotions/{YYYY-MM}/
+   - 修改 schedule.json（append 新筆）
+   - 觸發 GitHub Actions validate
+4. validate 通過 → 自動 commit & push → 5~10 分鐘後上線
+```
+
+### 8.5 Agent 規則
+
+兩種修改場景嚴格分離。詳見 [`docs/AGENT_RULES.md`](docs/AGENT_RULES.md)。
+
+## 9. npm scripts
 
 | 指令 | 說明 |
 |------|------|
 | `npm run dev` | 本地開發伺服器 |
-| `npm run build` | 生產環境建置 |
+| `npm run build` | 生產環境建置（產出 `out/`） |
 | `npm run start` | 啟動生產伺服器 |
 | `npm run lint` | ESLint 檢查 |
 | `npm run clean` | 清除 .next 快取 |
 | `npm run generate:llms` | 從 zh-TW.json 重新生成 llms.txt |
+| `npm run validate:promotions` | 驗證 schedule.json schema + 業務規則 |
+| `npm run build:active` | 從 schedule.json 產出 active.json / archive.json |
+| `npm run build:full` | validate + build:active + generate:llms + build（CI 等價） |
 
-## 9. 已知事項與 TODO
+## 10. 環境變數
 
-- Header 與 Footer CTA 已統一導向 `/contact`
-- Footer 的「隱私權政策」「服務條款」為 `#` 佔位連結
-- `config/assets.ts` 中 tech 圖片仍使用 picsum.photos 佔位圖
-- about 背景圖仍使用 picsum.photos 佔位圖
-- 臨床案例的 before/after 圖片日期寫死在 locale JSON 中
-- SEO: 各語系的 canonical URL 需配合實際域名更新（目前為 domain.com 佔位）
+詳見 [`.env.example`](.env.example) 與 [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md)。
+
+| 變數 | 用途 | 必要 |
+|-----|------|------|
+| `NEXT_PUBLIC_SITE_URL` | SEO canonical / metadataBase（預設 `https://www.auvita.tw`） | ✅ |
+| `GEMINI_API_KEY` | AI Studio 開發用 | 開發用 |
+
+## 11. 部署設定
+
+詳見 [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md)。
+
+**首次上線需在 GitHub Repo 設定的 Secrets：**
+
+- `FTP_HOST` (`ftp.gntbmd.com`) / `FTP_PORT` (`21`) / `FTP_USER` (`auvita@auvita.tw`) / `FTP_PASSWORD` / `FTP_REMOTE_PATH` (`/`)
+- `NEXT_PUBLIC_SITE_URL` (`https://www.auvita.tw`)
+
+⚠️ FTP 為明文協定。詳見 `docs/DEPLOYMENT.md` §「協定安全提醒」— 中長期建議升級 FTPS / SFTP。
+
+## 12. 已完成事項（2026-05-11 整改）
+
+- ✅ ADR-001：Next.js 為唯一真相（HTML 版本維護策略決定）
+- ✅ ADR-002：行銷自動化採 schedule.json 集中模式
+- ✅ ADR-003：SEO canonical URL 環境變數化（`NEXT_PUBLIC_SITE_URL`）
+- ✅ Claude Code 入口（`CLAUDE.md` + `.claude/settings.json`）
+- ✅ 完整文檔（AGENT_RULES / DEPLOYMENT / ARCHITECTURE_DECISION / MARKETING_GUIDE）
+- ✅ 自動化腳本（`validate-schedule.mjs` + `build-active.mjs`，零依賴）
+- ✅ GitHub Actions（push / daily / PR 三個 workflows）
+- ✅ 邊界測試 8/8 PASS（缺欄位、id 重複、日期反向、overlap > 3 等）
+
+## 13. 待處理 TODO
+
+- [ ] **GitHub Secrets 設定**（部署前必要）：見 `docs/DEPLOYMENT.md`
+  - `FTP_HOST` = `ftp.gntbmd.com`
+  - `FTP_PORT` = `21`
+  - `FTP_USER` = `auvita@auvita.tw`
+  - `FTP_PASSWORD`（向系統管理員索取）
+  - `FTP_REMOTE_PATH` = `/`
+  - `NEXT_PUBLIC_SITE_URL` = `https://www.auvita.tw`
+- [ ] **第一次部署驗證**：可暫時在 workflow 加 `dangerous-clean-slate: true`，驗證後移除
+- [ ] **協定安全升級評估**：向 IT 部門洽詢能否升 FTPS 或 SFTP（見 ADR-001 後補）
+- [ ] **GitHub repo 歸屬遷移**：`louiswanggnt/AeroJet` → 公司組織帳號
+- [ ] 等老闆完成 `locales/zh-TW.json` 文字最終定稿
+- [ ] **picsum 佔位圖替換**：tech / about / promotion 真實圖片
+- [ ] **臨床案例 before/after 日期寫死在 locale JSON 中**：考慮抽到資料層
+- [ ] Footer 的「隱私權政策」「服務條款」為 `#` 佔位連結
+- [ ] 確認 auvita.tw 網域到期日與 DNS 服務商
+- [ ] 老闆首次行銷自動化 PoC：完整跑一次 schedule.json 更新流程

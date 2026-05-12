@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Promotions from '@/components/Promotions';
 import Tech from '@/components/Tech';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
@@ -14,6 +15,7 @@ export default async function Home({ params }: Props) {
     <main className="min-h-screen bg-slate-50 font-sans text-gray-800 antialiased selection:bg-blue-100 selection:text-blue-900">
       <Header />
       <Hero />
+      <Promotions />
       <Tech />
       <FAQ />
       <Footer />

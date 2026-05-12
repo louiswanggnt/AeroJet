@@ -7,6 +7,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import type { Promotion } from '../types/promotion';
 
 const ROOT = path.resolve(__dirname, '..');
 const locale = JSON.parse(
@@ -66,6 +67,16 @@ const gasTypeRows = (gasEquipment.cylinderGasTypes as Array<{
   item.suitableFor.join('；'),
 ]);
 
+const activePromotions: Promotion[] = JSON.parse(
+  fs.readFileSync(path.join(ROOT, 'data', 'promotions', 'active.json'), 'utf-8'),
+);
+
+const promotionsSection = activePromotions.length > 0
+  ? `## 活動消息 (Promotions)\n\n${activePromotions
+      .map((p, i) => `${i + 1}. **${p['zh-TW'].title}**：${p['zh-TW'].description}`)
+      .join('\n')}`
+  : '';
+
 const output = `# ${common.brandName} (GNT) | ${common.productName}
 
 ## 品牌核心
@@ -74,6 +85,8 @@ const output = `# ${common.brandName} (GNT) | ${common.productName}
 ## 產品介紹：${common.productName}
 ${hero.desc}
 **核心亮點**：${hero.highlight}。
+
+${promotionsSection}
 
 ### 技術核心
 1. **${tech.features.supersonic.title}**：${tech.features.supersonic.desc}

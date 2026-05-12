@@ -476,8 +476,8 @@
     "desc": "見證 AuJet 的真實改變",
     "before": "Before",
     "after": "After",
-    "patientAge": "患者年齡",
-    "sessions": "課程 次數",
+    "patientAge": "年齡",
+    "sessions": "次數",
     "duration": "每次時間",
     "cases": [
       {
@@ -486,8 +486,8 @@
         "age": "48歲",
         "sessions": "5次",
         "duration": "30min",
-        "startTime": "12/26",
-        "endTime": "1/2"
+        "startTime": "",
+        "endTime": ""
       },
       {
         "id": 2,
@@ -495,8 +495,8 @@
         "age": "32歲",
         "sessions": "4次",
         "duration": "30min",
-        "startTime": "2025/12/21",
-        "endTime": "2026/01/18"
+        "startTime": "",
+        "endTime": ""
       },
       {
         "id": 3,
@@ -504,8 +504,8 @@
         "age": "35歲",
         "sessions": "1次",
         "duration": "30min",
-        "startTime": "09/05",
-        "endTime": "09/05"
+        "startTime": "",
+        "endTime": ""
       },
       {
         "id": 4,
@@ -513,8 +513,8 @@
         "age": "42歲",
         "sessions": "1次",
         "duration": "45min",
-        "startTime": "07/20",
-        "endTime": "7/20"
+        "startTime": "",
+        "endTime": ""
       },
       {
         "id": 5,
@@ -522,8 +522,8 @@
         "age": "19歲",
         "sessions": "2次",
         "duration": "60min",
-        "startTime": "07/29",
-        "endTime": "08/04"
+        "startTime": "",
+        "endTime": ""
       },
       {
         "id": 6,
@@ -531,8 +531,8 @@
         "age": "40歲",
         "sessions": "4次",
         "duration": "40min",
-        "startTime": "2023/11/06",
-        "endTime": "2024/12/01"
+        "startTime": "",
+        "endTime": ""
       },
       {
         "id": 7,
@@ -540,8 +540,8 @@
         "age": "35歲",
         "sessions": "1次",
         "duration": "20min",
-        "startTime": "11/01",
-        "endTime": "11/01"
+        "startTime": "",
+        "endTime": ""
       }
     ]
   },

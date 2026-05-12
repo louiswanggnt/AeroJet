@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2026-03-promo-1",
+    "image": "https://picsum.photos/seed/promo1/800/500",
+    "startAt": "2026-03-01",
+    "endAt": "2026-03-31",
+    "zh-TW": {
+      "title": "三月春季煥膚月",
+      "description": "搭配外泌體精華，享受 AuJet 深層導入療程。本月預約享早鳥優惠，名額有限。"
+    },
+    "en": {
+      "title": "March Spring Renewal",
+      "description": "Pair with exosome essence for a deep AuJet infusion treatment. Book this month for early-bird pricing — limited spots."
+    },
+    "ja": {
+      "title": "3月スプリングリニューアル",
+      "description": "エクソソームエッセンスと組み合わせた AuJet 深層導入トリートメント。今月のご予約で早期割引。"
+    }
+  },
+  {
+    "id": "2026-03-promo-2",
+    "image": "https://picsum.photos/seed/promo2/800/500",
+    "startAt": "2026-03-01",
+    "endAt": "2026-03-31",
+    "zh-TW": {
+      "title": "AuJet T6 新品上市",
+      "description": "第六代肌因槍正式登場，速度提升 30%、霧化更細緻。歡迎洽詢體驗。"
+    },
+    "en": {
+      "title": "AuJet T6 Now Available",
+      "description": "The 6th-gen device is here — 30% faster with finer atomization. Contact us for a demo."
+    },
+    "ja": {
+      "title": "AuJet T6 新登場",
+      "description": "第6世代デバイスが登場。速度30%向上、より微細な霧化を実現。デモのお問い合わせはこちら。"
+    }
+  },
+  {
+    "id": "2026-03-promo-3",
+    "image": "https://picsum.photos/seed/promo3/800/500",
+    "startAt": "2026-03-01",
+    "endAt": "2026-03-31",
+    "zh-TW": {
+      "title": "CO2 氣體療程組合方案",
+      "description": "二氧化碳搭配 AuJet 導入，促進微循環、改善膚色不均。立即諮詢專屬方案。"
+    },
+    "en": {
+      "title": "CO2 Gas Combo Package",
+      "description": "CO2 paired with AuJet infusion boosts microcirculation and evens skin tone. Inquire for a custom plan."
+    },
+    "ja": {
+      "title": "CO2ガスコンボパッケージ",
+      "description": "CO2とAuJet導入の組み合わせで微小循環を促進し、肌のトーンを均一に。カスタムプランはお問い合わせください。"
+    }
+  },
+  {
+    "id": "2026-05-promo-1",
+    "image": "https://picsum.photos/seed/may1/800/500",
+    "startAt": "2026-05-01",
+    "endAt": "2026-05-31",
+    "zh-TW": {
+      "title": "五月美肌煥新月",
+      "description": "AuJet 深層導入搭配玻尿酸補水，喚醒夏前肌膚光澤。本月諮詢享專屬優惠。"
+    },
+    "en": {
+      "title": "May Skin Renewal",
+      "description": "AuJet deep infusion with hyaluronic acid restores pre-summer glow. Inquire this month for exclusive pricing."
+    },
+    "ja": {
+      "title": "5月のスキンリニューアル",
+      "description": "AuJet 深層導入とヒアルロン酸の組み合わせで、夏前の肌のツヤを取り戻します。今月のご相談で特別価格。"
+    }
+  }
+]

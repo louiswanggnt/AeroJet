@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run build)",
+      "Bash(npm run validate:promotions)",
+      "Bash(npm run build:active)",
+      "Bash(npm run generate:llms)",
+      "Bash(node scripts/validate-schedule.mjs)",
+      "Bash(node scripts/build-active.mjs)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [
+      "Write(out/**)",
+      "Edit(out/**)",
+      "Write(.next/**)",
+      "Edit(.next/**)",
+      "Write(node_modules/**)",
+      "Edit(node_modules/**)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"const f=process.argv[1]||'';if(f.includes('data/promotions/schedule.json')){console.error('[hook] promotions/schedule.json changed — please run: npm run validate:promotions');}\" \"$CLAUDE_FILE_PATHS\""
+          }
+        ]
+      }
+    ]
+  }
+}
