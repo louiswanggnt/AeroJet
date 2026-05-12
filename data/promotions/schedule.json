@@ -39,7 +39,7 @@
     "id": "2026-03-promo-3",
     "image": "https://picsum.photos/seed/promo3/800/500",
     "startAt": "2026-03-01",
-    "endAt": "2026-03-31",
+    "endAt": "2026-05-31",
     "zh-TW": {
       "title": "CO2 氣體療程組合方案",
       "description": "二氧化碳搭配 AuJet 導入，促進微循環、改善膚色不均。立即諮詢專屬方案。"
@@ -58,6 +58,7 @@
     "image": "https://picsum.photos/seed/may1/800/500",
     "startAt": "2026-05-01",
     "endAt": "2026-05-31",
+    "link": "https://forms.gle/2KYBMSCSXYWAhDvx9",
     "zh-TW": {
       "title": "五月美肌煥新月",
       "description": "AuJet 深層導入搭配玻尿酸補水，喚醒夏前肌膚光澤。本月諮詢享專屬優惠。"
@@ -75,7 +76,8 @@
   "id": "2026-05-promo-2-test",
   "image": "/images/promotions/2026-05/123.png",
   "startAt": "2026-05-12",
-  "endAt":   "2026-05-15",
+    "endAt": "2026-05-15",
+    "link": "https://forms.gle/2KYBMSCSXYWAhDvx9",
   "zh-TW": { "title": "raden 我愛你", "description": "測試" },
   "en":    { "title": "I love raden",   "description": "test" },
   "ja":    { "title": "raden 大好き",   "description": "テスト" }
