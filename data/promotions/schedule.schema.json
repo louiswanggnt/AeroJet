@@ -36,6 +36,12 @@
         "format": "date-time",
         "description": "自動歸檔時間戳（由 build-active.mjs 寫入，行銷請勿手填）"
       },
+      "link": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https://",
+        "description": "選填外部連結（如報名表單、活動頁）。提供時整張圖卡點擊跳轉；不提供則純展示。僅允許 https 以避免 XSS。"
+      },
       "zh-TW": { "$ref": "#/$defs/localeContent" },
       "en":    { "$ref": "#/$defs/localeContent" },
       "ja":    { "$ref": "#/$defs/localeContent" }

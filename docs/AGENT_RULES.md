@@ -128,6 +128,33 @@
 - 跳過驗證直接 commit
 - 上傳超過 300 KB 的單張圖片
 
+### 越界拒絕清單（agent 接到請求時必須拒絕的訊號）
+
+行銷模式下，agent 接到下列任何一種請求，**必須立即拒絕並回覆「此需求屬於開發者範圍，請通知工程師走場景 A」**，不得自行動工：
+
+| 請求樣態 | 為何拒絕 |
+|---------|---------|
+| 「在活動圖上加報名按鈕／加 CTA 按鈕」 | 動到 `components/` |
+| 「活動加一個新欄位（例如 link / price / tag）」 | 動到 `types/`、`schema.json`、`components/` |
+| 「修改輪播動畫／改自動切換秒數／改圖片比例」 | 動到 `components/` |
+| 「加新的活動類型（例如倒數計時活動）」 | 動到 `types/`、`components/` |
+| 「換成新版的 schedule.json 格式」 | 動到 `schema.json` |
+| 「改文字字級／顏色／排版」 | 動到 `components/` 或 `app/` |
+| 「新增一個語系（例如韓文）」 | 動到 `i18n/`、`locales/` |
+| 「修改 SEO meta／首頁 banner 文案／頁尾連結」 | 動到 `locales/` 或 `components/` |
+
+**判斷原則：** 行銷模式下 agent **只能修改現有 `schedule.json` 內每筆 promotion 的「值」**（id / image / startAt / endAt / 三語系 title / description / link），以及上傳 / 刪除 `public/images/promotions/{YYYY-MM}/` 的圖片。**新增欄位、新增 UI、改動行為一律拒絕。**
+
+### 場景識別自查（agent 開始任務前先答這 3 題）
+
+任何 agent 接到「處理 XX 月活動」之類請求，動工前**必須在訊息中明示回答**：
+
+1. **場景判斷**：本次任務屬於場景 A（開發）還是場景 B（行銷）？
+2. **工作目錄確認**：執行 `git remote -v`，確認 origin 是 `louiswanggnt/AeroJet`（或本專案後續搬遷的組織帳號 repo）。若 origin 為空、或指向其他 repo（例如父層 monorepo）→ **立即停止**，告知使用者「目前工作目錄不是真實 AeroJet repo，請切換到正確位置」。
+3. **完成定義**：本次任務完成的標準是「跑過 lint/build」**還是**「commit + push 並驗證 GitHub Actions 綠燈、線上頁面正確顯示」？場景 A、B 都應該是後者；**沒推上線等於沒完成**。
+
+三題沒答完，禁止動工。
+
 ---
 
 ## 共通鐵律（兩個場景都適用）

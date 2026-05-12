@@ -6,6 +6,7 @@ export interface PromotionLocaleContent {
 export interface Promotion {
   id: string;
   image: string;
+  link?: string;
   archivedAt?: string;
   'zh-TW': PromotionLocaleContent;
   en: PromotionLocaleContent;

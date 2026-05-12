@@ -60,16 +60,34 @@ export default function Promotions() {
               transition={{ duration: 0.5, ease: 'easeInOut' }}
               className="grid grid-cols-1 md:grid-cols-2"
             >
-              {/* Left: Image */}
-              <div className="relative aspect-[16/10] md:aspect-auto md:min-h-[340px]">
-                <Image
-                  src={item.image}
-                  alt={content.title}
-                  fill
-                  className="object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
+              {/* Left: Image (clickable if link provided) */}
+              {item.link ? (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={content.title}
+                  className="relative aspect-[16/10] md:aspect-auto md:min-h-[340px] block group cursor-pointer"
+                >
+                  <Image
+                    src={item.image}
+                    alt={content.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    referrerPolicy="no-referrer"
+                  />
+                </a>
+              ) : (
+                <div className="relative aspect-[16/10] md:aspect-auto md:min-h-[340px]">
+                  <Image
+                    src={item.image}
+                    alt={content.title}
+                    fill
+                    className="object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              )}
 
               {/* Right: Text */}
               <div className="flex flex-col justify-center p-8 md:p-12">
