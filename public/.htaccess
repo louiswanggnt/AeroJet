@@ -6,13 +6,15 @@ RewriteEngine On
 # 預設語系：根路徑 / 重導至 /zh-TW
 RewriteRule ^$ /zh-TW [R=302,L]
 
-# 移除結尾斜線（讓 /zh-TW/ → /zh-TW，再由下一條規則處理為 .html）
-RewriteCond %{REQUEST_FILENAME} !-d
+# 移除結尾斜線（無條件，讓 /zh-TW/ → /zh-TW，再由下一條規則處理為 .html）
+# 不加 -d 條件，因為 Next.js static export 為每個 route 同時產生 xxx/ 目錄
+# 與 xxx.html 檔案，我們要的是 .html 而非進入目錄
 RewriteRule ^(.+)/$ /$1 [R=301,L]
 
 # 無副檔名請求 → 嘗試 .html 檔（Next.js static export 產出格式）
+# 不檢查 !-d：Next.js 為每個 route 同時產生 zh-TW.html 檔 + zh-TW/ 目錄，
+# 我們要 .html 檔，不要進入空目錄
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^(.+)$ /$1.html [L]
 
