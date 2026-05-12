@@ -1,0 +1,40 @@
+# Next.js static export routing for Apache
+# 由 next build 複製 public/.htaccess → out/.htaccess → FTP 上傳到 auvita.tw 根目錄
+
+RewriteEngine On
+
+# 預設語系：根路徑 / 重導至 /zh-TW
+RewriteRule ^$ /zh-TW [R=302,L]
+
+# 移除結尾斜線（讓 /zh-TW/ → /zh-TW，再由下一條規則處理為 .html）
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# 無副檔名請求 → 嘗試 .html 檔（Next.js static export 產出格式）
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)$ /$1.html [L]
+
+# 自訂 404
+ErrorDocument 404 /404.html
+
+# 安全：禁止列出目錄
+Options -Indexes
+
+# 快取靜態資源
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# Gzip 壓縮
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json text/plain
+</IfModule>
