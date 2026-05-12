@@ -5,8 +5,7 @@ on:
     branches: [main]
     paths:
       - 'data/promotions/**'
-      - 'public/images/promotions/**'
-      - 'public/images/**'
+      - 'public/**'
       - 'locales/**'
       - 'app/**'
       - 'components/**'
@@ -16,6 +15,7 @@ on:
       - 'next.config.ts'
       - 'package.json'
       - 'package-lock.json'
+      - 'tsconfig.json'
       - '.github/workflows/deploy-on-push.yml'
   workflow_dispatch:
 
