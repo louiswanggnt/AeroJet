@@ -3,6 +3,12 @@
 
 RewriteEngine On
 
+# 關掉 mod_dir 自動加結尾斜線
+# Next.js static export 為 /zh-TW 同時產出 zh-TW.html + zh-TW/ 目錄，
+# 若 mod_dir 自動把 /zh-TW 改重導到 /zh-TW/，會跟下面的 trailing-slash 移除
+# 規則形成 301 死循環
+DirectorySlash Off
+
 # 預設語系：根路徑 / 重導至 /zh-TW
 RewriteRule ^$ /zh-TW [R=302,L]
 
