@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "id": "2026-05-summer-demo",
+    "image": "https://auvita.tw/images/promotions/2026-05/2026-05-summer-demo_web.jpg",
+    "startAt": "2026-05-10",
+    "endAt": "2026-06-15",
+    "zh-TW": {
+      "title": "夏季肌因槍特惠（範例）",
+      "description": "夏季限定 8折"
+    },
+    "en": {
+      "title": "夏季肌因槍特惠（範例）",
+      "description": "夏季限定 8折"
+    },
+    "ja": {
+      "title": "夏季肌因槍特惠（範例）",
+      "description": "夏季限定 8折"
+    },
+    "link": "https://www.bnext.com.tw/article/90591/hermes-agent-procedural-memory"
+  },
+  {
+    "id": "2026-05-winter-demss",
+    "image": "https://auvita.tw/images/promotions/2026-05/2026-05-summer-demo_web.jpg",
+    "startAt": "2026-05-10",
+    "endAt": "2026-06-15",
+    "zh-TW": {
+      "title": "冬季範例）",
+      "description": "夏季限定 5折"
+    },
+    "en": {
+      "title": "冬季範例）",
+      "description": "夏季限定 5折"
+    },
+    "ja": {
+      "title": "冬季範例）",
+      "description": "夏季限定 5折"
+    },
+    "link": "https://www.bnext.com.tw/article/90591/hermes-agent-procedural-memory"
+  }
+]
