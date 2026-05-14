@@ -97,6 +97,7 @@ jobs:
             echo "No auto-generated changes to commit"
           else
             git commit -m "chore(promotions): auto-build active/archive [skip ci]"
+            git pull --rebase origin main
             git push origin HEAD:main
           fi
 
