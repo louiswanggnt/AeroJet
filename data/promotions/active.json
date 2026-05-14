@@ -5,36 +5,55 @@
     "startAt": "2026-05-10",
     "endAt": "2026-06-15",
     "zh-TW": {
-      "title": "夏季肌因槍特惠（範例）",
-      "description": "夏季限定 8折"
+      "title": "春",
+      "description": "春"
     },
     "en": {
-      "title": "夏季肌因槍特惠（範例）",
-      "description": "夏季限定 8折"
+      "title": "春",
+      "description": "春"
     },
     "ja": {
-      "title": "夏季肌因槍特惠（範例）",
-      "description": "夏季限定 8折"
+      "title": "春",
+      "description": "春"
     },
     "link": "https://www.bnext.com.tw/article/90591/hermes-agent-procedural-memory"
   },
   {
-    "id": "2026-05-winter-demss",
-    "image": "https://auvita.tw/images/promotions/2026-05/2026-05-summer-demo_web.jpg",
+    "id": "2026-05-demo-3",
+    "image": "https://auvita.tw/images/promotions/2026-05/2026-05-demo-3_web.jpg",
     "startAt": "2026-05-10",
     "endAt": "2026-06-15",
     "zh-TW": {
-      "title": "冬季範例）",
-      "description": "夏季限定 5折"
+      "title": "夏",
+      "description": "夏"
     },
     "en": {
-      "title": "冬季範例）",
-      "description": "夏季限定 5折"
+      "title": "夏",
+      "description": "夏"
     },
     "ja": {
-      "title": "冬季範例）",
-      "description": "夏季限定 5折"
+      "title": "夏",
+      "description": "夏"
     },
-    "link": "https://www.bnext.com.tw/article/90591/hermes-agent-procedural-memory"
+    "link": "https://www.managertoday.com.tw/articles/view/72033?"
+  },
+  {
+    "id": "2026-05-winter-demss",
+    "image": "https://auvita.tw/images/promotions/2026-05/2026-05-winter-demss_web.jpg",
+    "startAt": "2026-05-14",
+    "endAt": "2026-06-15",
+    "zh-TW": {
+      "title": "秋",
+      "description": "秋"
+    },
+    "en": {
+      "title": "秋",
+      "description": "秋"
+    },
+    "ja": {
+      "title": "秋",
+      "description": "秋"
+    },
+    "link": "https://www.youtube.com/watch?v=2pM-7fBXc_M"
   }
 ]
