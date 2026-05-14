@@ -167,6 +167,30 @@
 
 ---
 
+## GitHub / 本機同步準則（n8n 自動化協同工作）
+
+本 repo 同時被 **n8n 自動化流程**（每 2 小時 cron）寫入，因此「本機 checkout」與「遠端 main」可能隨時不同步。任何 agent 動工前必須遵守以下三條：
+
+### 準則 1 — GitHub 遠端是唯一真相；本機只是暫存快取
+
+- 一切操作以 GitHub 遠端為準（包括 Claude Desktop 透過 GitHub MCP 操作時同樣走 GitHub API，不走本機路徑）
+- 若在本機修改了任何檔案，**必須 `git push` 確保兩端一致**，否則不算完成
+- 確認現狀時使用 `gh api repos/.../contents/...` 或 GitHub UI，**不可只看本機 checkout 就下結論**（本機 `public/images/` 空 ≠ 圖片未上傳；n8n 可能已直接 commit 到遠端）
+
+### 準則 2 — 修改本機前先 pull；push 前確認無落差
+
+- 進入本目錄後，動工前先執行 `git status`
+- 若顯示「behind N commits」→ 先 `git pull --ff-only`（或 `git stash → pull → stash pop`），再開始修改
+- push 前若不確定遠端狀況：`git log origin/main..HEAD` 確認自己的 delta，避免覆蓋 n8n 自動 commit（圖片、schedule.json、bot auto-build）
+
+### 準則 3 — 自動化的目標檔案是 GitHub 上的版本
+
+- n8n 透過 GitHub Contents API 直寫 `public/images/promotions/` 與 `data/promotions/schedule.json`
+- Google Sheet 是輸入端（活動資料），GitHub repo 是輸出端（真實上線檔案）
+- 本機 schedule.json 不代表「目前 auvita.tw 上的真實內容」
+
+---
+
 ## active.json / archive.json：自動產出機制
 
 | 檔案 | 誰寫 | 規則 |

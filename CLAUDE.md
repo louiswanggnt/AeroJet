@@ -9,6 +9,7 @@
 2. **使用者可見文字一律來自 `locales/{zh-TW,en,ja}.json`**。元件內**禁止硬編碼**面向用戶的字串。
 3. **行銷修改僅限**：`data/promotions/schedule.json` 與 `public/images/promotions/`。其他任何路徑**禁止行銷觸碰**。
 4. **任何活動 / 促銷改動完成後，必須跑 `npm run validate:promotions`**。驗證失敗禁止 commit。
+5. **GitHub 遠端是唯一真相**：動工前先 `git status`；落後就先 `git pull`；改完必須 `git push`。本機 `public/` 內容不代表遠端現況（n8n 自動化會直接寫遠端）。詳見 [`docs/AGENT_RULES.md`](docs/AGENT_RULES.md)「GitHub / 本機同步準則」。
 
 ## 🎯 兩種修改場景
 
